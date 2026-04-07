@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Fanlarim{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h2 class="mb-4"><i class="bi bi-journal-text"></i> Mening fanlarim</h2>
+        
+        {% if subjects %}
+        <div class="row">
+            {% for subject in subjects %}
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ subject.subject_name }}</h5>
+                        <p class="text-muted">O'qituvchi: {{ subject.teacher.get_full_name|default:subject.teacher.username }}</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'subjectdetails' subject.subject_name %}" class="btn btn-primary btn-sm w-100">
+                            <i class="bi bi-arrow-right-circle"></i> Mavzularni ko'rish
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-info">
+            Hozircha sizga biriktirilgan fanlar yo'q.
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

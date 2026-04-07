@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ subject.subject_name }}{% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Fanlar</a></li>
+        <li class="breadcrumb-item active">{{ subject.subject_name }}</li>
+    </ol>
+</nav>
+
+<h2 class="mb-4">{{ subject.subject_name }} - Mavzular</h2>
+
+{% if topics %}
+<div class="list-group">
+    {% for topic in topics %}
+    <a href="{% url 'topicdetails' topic.topic_uuid %}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><i class="bi bi-folder"></i> {{ topic.topic_name }}</h5>
+            <small class="text-muted">{{ topic.created_at|date:"d.m.Y" }}</small>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-warning">Bu fanda hali mavzular yo'q.</div>
+{% endif %}
+{% endblock %}
