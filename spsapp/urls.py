@@ -7,4 +7,7 @@ urlpatterns = [
     path('topic/<uuid:topic_uuid>/', views.topicdetails, name='topicdetails'),
     path('topic/<uuid:topic_uuid>/upload/', views.ResourceUploadView.as_view(), name='resource_upload'),
     path('resource/<int:resource_id>/view/', views.resource_viewer, name='resource_viewer'),
+    path('quiz/create/', views.create_quiz_view, name='create_quiz'),
+    path('quiz/<uuid:quiz_uuid>/take/', views.take_quiz_view, name='take_quiz'),
+    path('quiz/<uuid:quiz_uuid>/results/', views.quiz_results_admin, name='quiz_results_admin'),
 ]

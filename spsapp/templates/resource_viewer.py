@@ -18,18 +18,33 @@
 </div>
 
 <div id="viewer-container" class="border rounded p-2 bg-light">
-    {% if resource.file_type == 'pdf' %}
-        <embed src="{{ resource.file.url }}" type="application/pdf" width="100%" height="800px" />
 
-    {% elif resource.pdf_file %}
-        <embed src="{{ resource.pdf_file.url }}" type="application/pdf" width="100%" height="800px" />
-        <div class="alert alert-success mt-2">
-            <i class="bi bi-check-circle"></i> Asl fayl ({{ resource.file_type }}) PDF-ga aylantirildi.
-        </div>
+    {% if resource.pdf_file %}
+        <iframe 
+            src="{{ resource.pdf_file.url }}" 
+            width="100%" 
+            height="800" 
+            style="border:none;">
+        </iframe>
+
+    {% elif resource.file_type == "pdf" %}
+        <iframe 
+            src="{{ resource.file.url }}" 
+            width="100%" 
+            height="800" 
+            style="border:none;">
+        </iframe>
 
     {% else %}
-        <div class="alert alert-danger">Faylni ko'rsatishda xatolik yuz berdi.</div>
+        <div class="alert alert-warning">
+            Bu fayl preview qilinmaydi.
+            <br><br>
+            <a href="{{ resource.file.url }}" class="btn btn-primary">
+                Faylni yuklab olish
+            </a>
+        </div>
     {% endif %}
+
 </div>
 {% endblock %}
 
@@ -40,10 +55,10 @@ function openFullscreen() {
 
     if (elem.requestFullscreen) {
         elem.requestFullscreen();
-    }
+    } 
     else if (elem.webkitRequestFullscreen) {
         elem.webkitRequestFullscreen();
-    }
+    } 
     else if (elem.msRequestFullscreen) {
         elem.msRequestFullscreen();
     }
