@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% block title %}Test yaratish — SPS{% endblock %}
+
+{% block extra_head %}
+<style>
+    .question-block {
+        background: #fff; border: 2px solid #e2e8f0; border-radius: 14px;
+        position: relative; transition: border-color .2s;
+    }
+    .question-block:focus-within { border-color: #1a56db; }
+    .question-number-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 28px; height: 28px; border-radius: 8px;
+        background: #1a56db; color: #fff; font-size: .8rem; font-weight: 700;
+    }
+    .choice-row {
+        display: flex; align-items: center; gap: .6rem; margin-bottom: .5rem;
+        padding: .5rem .75rem; background: #f8fafc; border-radius: 8px;
+        border: 1.5px solid #e2e8f0;
+    }
+    .choice-row:focus-within { border-color: #93c5fd; }
+    .remove-q-btn {
+        position: absolute; top: 14px; right: 14px;
+        background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 1.2rem; padding: 0;
+        transition: color .15s;
+    }
+    .remove-q-btn:hover { color: #ef4444; }
+    .sticky-actions {
+        position: sticky; bottom: 0; background: #fff; border-top: 1px solid #e2e8f0;
+        padding: 1rem 0; margin-top: 1.5rem;
+    }
+    .saved-indicator {
+        font-size: .8rem; color: #10b981; opacity: 0;
+        transition: opacity .3s;
+    }
+    .saved-indicator.show { opacity: 1; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4 fade-up">
+    <div>
+        <h4 class="fw-700 mb-0">Yangi test yaratish</h4>
+        <p class="text-muted small mb-0">Savollar qo'shing va o'quvchilar bilan ulashing</p>
+    </div>
+    <span class="saved-indicator" id="saved-indicator">
+        <i class="bi bi-check-circle-fill me-1"></i>Qoralama saqlandi
+    </span>
+</div>
+
+<div class="card shadow-sm fade-up fade-up-1">
+    <div class="card-body p-4">
+
+        <!-- Quiz meta -->
+        <div class="row g-3 mb-4 pb-4 border-bottom">
+            <div class="col-md-6">
+                <label class="form-label fw-600 small">Test nomi *</label>
+                <input type="text" id="quiz-title" class="form-control form-control-lg"
+                       placeholder="Masalan: Python bo'yicha yakuniy test" oninput="saveDraft()">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-600 small">Mavzu *</label>
+                <select id="topic-id" class="form-select form-select-lg" onchange="saveDraft()">
+                    <option value="">— Mavzuni tanlang —</option>
+                    {% for topic in user_topics %}
+                    <option value="{{ topic.id }}">{{ topic.subject.subject_name }} › {{ topic.topic_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label fw-600 small">Vaqt (min)</label>
+                <input type="number" id="quiz-time" class="form-control form-control-lg"
+                       value="15" min="1" max="180" oninput="saveDraft()">
+            </div>
+            <div class="col-12">
+                <label class="form-label fw-600 small">Tavsif (ixtiyoriy)</label>
+                <textarea id="quiz-desc" class="form-control" rows="2"
+                          placeholder="Test haqida qisqacha ko'rsatma..." oninput="saveDraft()"></textarea>
+            </div>
+        </div>
+
+        <!-- Questions area -->
+        <div id="questions-list"></div>
+
+        <button type="button" class="btn btn-outline-primary mt-2" onclick="addQuestion()">
+            <i class="bi bi-plus-circle me-1"></i>Savol qo'shish
+        </button>
+
+    </div>
+</div>
+
+<!-- Sticky submit -->
+<div class="sticky-actions">
+    <div class="d-flex justify-content-between align-items-center">
+        <span class="text-muted small" id="q-count">0 ta savol</span>
+        <button type="button" class="btn btn-brand px-5" onclick="submitQuiz()">
+            <i class="bi bi-send-check me-1"></i>Saqlash va e'lon qilish
+        </button>
+    </div>
+</div>
+
+<!-- Success modal -->
+<div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0" style="border-radius:16px;">
+            <div class="modal-body text-center p-5">
+                <div style="font-size:3rem;">🎉</div>
+                <h5 class="fw-700 mt-3">Test muvaffaqiyatli yaratildi!</h5>
+                <p class="text-muted mb-3">O'quvchilar uchun havola tayyor.</p>
+                <div class="d-flex gap-2 mb-3">
+                    <input type="text" id="modal-link" class="form-control" style="font-size:.83rem; font-family: monospace;" readonly>
+                    <button class="btn btn-outline-secondary" onclick="copyModalLink()">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
+                </div>
+                <a href="{% url 'dashboard' %}" class="btn btn-brand w-100">
+                    Dashboardga qaytish
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let qCounter = 0;
+
+// ─────────── Load draft on page open ───────────
+window.addEventListener('DOMContentLoaded', () => {
+    const draft = JSON.parse(localStorage.getItem('quiz_draft') || 'null');
+    if (!draft) return;
+    document.getElementById('quiz-title').value = draft.title || '';
+    document.getElementById('topic-id').value = draft.topic_id || '';
+    document.getElementById('quiz-time').value = draft.time_limit || 15;
+    document.getElementById('quiz-desc').value = draft.description || '';
+    (draft.questions || []).forEach(q => addQuestion(q));
+});
+
+// ─────────── ADD QUESTION ───────────
+function addQuestion(prefill) {
+    qCounter++;
+    const qId = `q_${Date.now()}_${qCounter}`;
+    const html = `
+    <div class="question-block p-4 mb-3" id="${qId}">
+        <button class="remove-q-btn" onclick="removeEl('${qId}')" title="O'chirish">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="question-number-badge q-order">${qCounter}</span>
+            <input type="text" class="form-control q-text"
+                   placeholder="Savol matnini kiriting..."
+                   value="${escHtml(prefill?.text || '')}" oninput="saveDraft()">
+        </div>
+        <div class="row g-2 mb-3">
+            <div class="col-md-6">
+                <select class="form-select form-select-sm q-type" onchange="saveDraft()">
+                    <option value="single" ${(prefill?.type==='single'||!prefill?.type)?'selected':''}>Bitta to'g'ri javob</option>
+                    <option value="multiple" ${prefill?.type==='multiple'?'selected':''}>Ko'p to'g'ri javob</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input type="number" class="form-control form-control-sm q-points"
+                       placeholder="Ball" value="${prefill?.points || 5}" min="1" oninput="saveDraft()">
+            </div>
+        </div>
+        <div class="choices-list" id="choices_${qId}"></div>
+        <button type="button" class="btn btn-sm btn-outline-secondary mt-1" onclick="addChoice('${qId}')">
+            <i class="bi bi-plus me-1"></i>Variant qo'shish
+        </button>
+    </div>`;
+    document.getElementById('questions-list').insertAdjacentHTML('beforeend', html);
+    // Pre-fill choices if restoring draft
+    const choiceList = prefill?.choices || [];
+    if (choiceList.length > 0) {
+        choiceList.forEach(c => addChoice(qId, c));
+    } else {
+        addChoice(qId); addChoice(qId); // default 2 empty choices
+    }
+    reindexQuestions();
+    saveDraft();
+}
+
+// ─────────── ADD CHOICE ───────────
+function addChoice(qId, prefill) {
+    const cId = `c_${Date.now()}_${Math.random().toString(36).slice(2,6)}`;
+    const html = `
+    <div class="choice-row" id="${cId}">
+        <input type="checkbox" class="form-check-input is-correct" style="width:18px;height:18px;"
+               ${prefill?.is_correct ? 'checked' : ''} onchange="saveDraft()">
+        <input type="text" class="form-control form-control-sm choice-text flex-grow-1"
+               placeholder="Variant matni..." value="${escHtml(prefill?.text || '')}" oninput="saveDraft()">
+        <button type="button" class="btn btn-sm text-danger border-0 bg-transparent"
+                onclick="removeEl('${cId}')" title="O'chirish">
+            <i class="bi bi-trash3"></i>
+        </button>
+    </div>`;
+    document.getElementById(`choices_${qId}`).insertAdjacentHTML('beforeend', html);
+}
+
+function removeEl(id) {
+    document.getElementById(id)?.remove();
+    reindexQuestions();
+    saveDraft();
+}
+
+function reindexQuestions() {
+    let i = 1;
+    document.querySelectorAll('.q-order').forEach(el => { el.textContent = i++; });
+    document.getElementById('q-count').textContent = `${i-1} ta savol`;
+}
+
+// ─────────── SAVE DRAFT ───────────
+let saveTimer;
+function saveDraft() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+        const data = collectData();
+        localStorage.setItem('quiz_draft', JSON.stringify(data));
+        const ind = document.getElementById('saved-indicator');
+        ind.classList.add('show');
+        setTimeout(() => ind.classList.remove('show'), 2000);
+    }, 400);
+}
+
+function collectData() {
+    const questions = [];
+    document.querySelectorAll('.question-block').forEach(block => {
+        const choices = [];
+        block.querySelectorAll('.choice-row').forEach(row => {
+            choices.push({
+                text: row.querySelector('.choice-text').value,
+                is_correct: row.querySelector('.is-correct').checked,
+            });
+        });
+        questions.push({
+            text: block.querySelector('.q-text').value,
+            type: block.querySelector('.q-type').value,
+            points: parseInt(block.querySelector('.q-points').value) || 5,
+            choices,
+        });
+    });
+    return {
+        topic_id: document.getElementById('topic-id').value,
+        title: document.getElementById('quiz-title').value,
+        time_limit: parseInt(document.getElementById('quiz-time').value) || 15,
+        description: document.getElementById('quiz-desc').value,
+        questions,
+    };
+}
+
+// ─────────── SUBMIT ───────────
+async function submitQuiz() {
+    saveDraft();
+    const data = collectData();
+
+    if (!data.topic_id)   return alert("Iltimos, mavzuni tanlang!");
+    if (!data.title.trim()) return alert("Test nomini kiriting!");
+    if (data.questions.length === 0) return alert("Kamida bitta savol qo'shing!");
+
+    for (let i = 0; i < data.questions.length; i++) {
+        const q = data.questions[i];
+        if (!q.text.trim()) return alert(`${i+1}-savol matni bo'sh!`);
+        if (q.choices.length < 2) return alert(`${i+1}-savolda kamida 2 ta variant bo'lsin!`);
+        if (q.choices.every(c => !c.text.trim())) return alert(`${i+1}-savol variantlarini to'ldiring!`);
+        if (!q.choices.some(c => c.is_correct)) return alert(`${i+1}-savolda to'g'ri javob belgilanmagan!`);
+    }
+
+    const submitBtn = document.querySelector('[onclick="submitQuiz()"]');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Saqlanmoqda...';
+
+    try {
+        const resp = await fetch('/quiz/create/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-CSRFToken': '{{ csrf_token }}' },
+            body: JSON.stringify(data),
+        });
+        const res = await resp.json();
+
+        if (res.status === 'success') {
+            localStorage.removeItem('quiz_draft');
+            const baseUrl = window.location.origin;
+            document.getElementById('modal-link').value = baseUrl + res.take_url;
+            new bootstrap.Modal(document.getElementById('successModal')).show();
+        } else {
+            alert("Xatolik: " + res.message);
+        }
+    } catch (e) {
+        alert("Tarmoq xatosi: " + e.message);
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="bi bi-send-check me-1"></i>Saqlash va e\'lon qilish';
+    }
+}
+
+function copyModalLink() {
+    const val = document.getElementById('modal-link').value;
+    navigator.clipboard.writeText(val);
+}
+
+function escHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+{% endblock %}
