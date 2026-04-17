@@ -1,29 +1,237 @@
-{% extends 'base.html' %}
+{% extends "base_react.html" %}
+{% block title %}{{ subject.subject_name }} — SPS{% endblock %}
 
-{% block title %}{{ subject.subject_name }}{% endblock %}
+{% block react_script %}
+<script type="text/babel">
+const { useState } = React;
 
-{% block content %}
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Fanlar</a></li>
-        <li class="breadcrumb-item active">{{ subject.subject_name }}</li>
-    </ol>
-</nav>
+function Btn({ children, variant='primary', size='md', onClick, type='button', loading, disabled, style={} }) {
+  const base = {display:'inline-flex',alignItems:'center',gap:6,fontFamily:'inherit',fontWeight:500,
+    cursor:disabled||loading?'not-allowed':'pointer',borderRadius:8,border:'none',transition:'all .15s',opacity:disabled||loading?0.7:1};
+  const sizes = {sm:{padding:'5px 12px',fontSize:13},md:{padding:'8px 16px',fontSize:14}};
+  const variants = {
+    primary:{background:'var(--brand)',color:'white'},
+    outline:{background:'transparent',color:'var(--text)',border:'1px solid var(--border)'},
+    danger:{background:'var(--danger)',color:'white'},
+  };
+  return <button type={type} onClick={onClick} disabled={disabled||loading} style={{...base,...sizes[size],...variants[variant],...style}}>
+    {loading && <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{animation:'spin 1s linear infinite'}}><circle cx="12" cy="12" r="10" opacity=".3"/><path d="M22 12a10 10 0 00-10-10"/></svg>}
+    {children}
+  </button>;
+}
 
-<h2 class="mb-4">{{ subject.subject_name }} - Mavzular</h2>
-
-{% if topics %}
-<div class="list-group">
-    {% for topic in topics %}
-    <a href="{% url 'topicdetails' topic.topic_uuid %}" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1"><i class="bi bi-folder"></i> {{ topic.topic_name }}</h5>
-            <small class="text-muted">{{ topic.created_at|date:"d.m.Y" }}</small>
+function Modal({ open, onClose, title, children, width=480 }) {
+  if (!open) return null;
+  return (
+    <div style={{position:'fixed',inset:0,background:'rgba(15,23,42,0.5)',zIndex:200,display:'flex',alignItems:'center',justifyContent:'center',padding:16}} onClick={onClose}>
+      <div style={{background:'var(--card)',borderRadius:16,width:'100%',maxWidth:width,maxHeight:'90vh',overflow:'auto',boxShadow:'var(--shadow-md)',animation:'fadeIn .2s ease'}} onClick={e=>e.stopPropagation()}>
+        <div style={{padding:'20px 24px 16px',borderBottom:'1px solid var(--border)',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <h3 style={{fontWeight:600,fontSize:16}}>{title}</h3>
+          <button onClick={onClose} style={{border:'none',background:'transparent',fontSize:20,color:'var(--muted)'}}>×</button>
         </div>
-    </a>
-    {% endfor %}
-</div>
-{% else %}
-<div class="alert alert-warning">Bu fanda hali mavzular yo'q.</div>
-{% endif %}
+        <div style={{padding:24}}>{children}</div>
+      </div>
+    </div>
+  );
+}
+
+function getCsrf() { return window.__SPS_URLS__?.csrfToken || ''; }
+
+function SubjectDetail() {
+  const data = window.__SPS_DATA__;
+  const subject = data.subject;
+  const [topics, setTopics] = useState(data.topics || []);
+  const [showPanel, setShowPanel] = useState(false);
+  const [newTopic, setNewTopic] = useState({topic_name:'',description:''});
+  const [editId, setEditId] = useState(null);
+  const [editName, setEditName] = useState('');
+  const [deleteTarget, setDeleteTarget] = useState(null);
+  const [saving, setSaving] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+
+  const reorder = async (arr) => {
+    setTopics(arr);
+    await fetch('/topics/reorder/', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-CSRFToken':getCsrf()},
+      body: JSON.stringify({orders: arr.map((t,i)=>({id:t.id,order:i+1}))})
+    });
+  };
+
+  const moveUp = (i) => { if(i===0) return; const a=[...topics]; [a[i-1],a[i]]=[a[i],a[i-1]]; reorder(a); };
+  const moveDown = (i) => { if(i===topics.length-1) return; const a=[...topics]; [a[i],a[i+1]]=[a[i+1],a[i]]; reorder(a); };
+
+  const addTopic = async () => {
+    if (!newTopic.topic_name.trim()) return;
+    setSaving(true);
+    const fd = new FormData();
+    Object.entries(newTopic).forEach(([k,v])=>fd.append(k,v));
+    fd.append('csrfmiddlewaretoken', getCsrf());
+    await fetch(`/subject/${subject.id}/topic/create/`, {method:'POST',body:fd});
+    window.location.reload();
+  };
+
+  const saveEdit = async (id) => {
+    const fd = new FormData();
+    fd.append('topic_name', editName);
+    fd.append('csrfmiddlewaretoken', getCsrf());
+    await fetch(`/topic/${topics.find(t=>t.id===id).topic_uuid}/edit/`, {method:'POST',body:fd});
+    setTopics(p=>p.map(t=>t.id===id?{...t,topic_name:editName}:t));
+    setEditId(null);
+  };
+
+  const deleteTopic = async () => {
+    setDeleting(true);
+    const fd = new FormData();
+    fd.append('csrfmiddlewaretoken', getCsrf());
+    await fetch(`/topic/${deleteTarget.topic_uuid}/delete/`, {method:'POST',body:fd});
+    setTopics(p=>p.filter(t=>t.id!==deleteTarget.id));
+    setDeleteTarget(null);
+    setDeleting(false);
+  };
+
+  return (
+    <div style={{maxWidth:900,margin:'0 auto',padding:'28px 24px'}} className="fade-in">
+      {/* Breadcrumb */}
+      <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:20,fontSize:14,color:'var(--muted)'}}>
+        <a href="/" style={{color:'var(--brand)',fontWeight:500,textDecoration:'none'}}>Bosh sahifa</a>
+        <span>›</span>
+        <span style={{color:'var(--text)',fontWeight:500}}>{subject.subject_name}</span>
+      </div>
+
+      {/* Header */}
+      <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
+        <div style={{display:'flex',alignItems:'center',gap:12}}>
+          <div style={{width:44,height:44,borderRadius:12,background:subject.color,display:'flex',
+              alignItems:'center',justifyContent:'center',color:'white',fontWeight:700,fontSize:18}}>
+            {subject.subject_name[0]}
+          </div>
+          <div>
+            <h1 style={{fontSize:20,fontWeight:700}}>{subject.subject_name}</h1>
+            <p style={{fontSize:13,color:'var(--muted)'}}>{topics.length} ta mavzu</p>
+          </div>
+        </div>
+        <Btn onClick={()=>setShowPanel(true)}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          Mavzu qo'shish
+        </Btn>
+      </div>
+
+      {/* Topics list */}
+      <div style={{background:'var(--card)',borderRadius:'var(--radius)',border:'1px solid var(--border)',boxShadow:'var(--shadow)'}}>
+        {topics.length===0 && (
+          <div style={{padding:'48px 24px',textAlign:'center',color:'var(--muted)',fontSize:14}}>
+            Hali mavzu qo'shilmagan
+          </div>
+        )}
+        {topics.map((topic,i)=>(
+          <div key={topic.id} style={{display:'flex',alignItems:'center',gap:12,padding:'14px 18px',
+              borderBottom: i<topics.length-1?'1px solid var(--border)':'none'}}>
+            {/* Reorder buttons */}
+            <div style={{display:'flex',flexDirection:'column',gap:2}}>
+              {[['up',()=>moveUp(i),i===0],['down',()=>moveDown(i),i===topics.length-1]].map(([dir,fn,dis])=>(
+                <button key={dir} onClick={fn} disabled={dis}
+                  style={{width:22,height:22,border:'1px solid var(--border)',borderRadius:4,background:'transparent',
+                    cursor:dis?'not-allowed':'pointer',display:'flex',alignItems:'center',justifyContent:'center',
+                    opacity:dis?0.3:1,color:'var(--muted)'}}>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    {dir==='up' ? <polyline points="18 15 12 9 6 15"/> : <polyline points="6 9 12 15 18 9"/>}
+                  </svg>
+                </button>
+              ))}
+            </div>
+
+            {/* Info / Edit */}
+            <div style={{flex:1}}>
+              {editId===topic.id ? (
+                <div style={{display:'flex',gap:8}}>
+                  <input value={editName} onChange={e=>setEditName(e.target.value)} autoFocus
+                    style={{flex:1,padding:'5px 10px',borderRadius:7,border:'1px solid var(--brand)',fontSize:14}}
+                    onKeyDown={e=>e.key==='Enter'&&saveEdit(topic.id)} />
+                  <Btn size="sm" onClick={()=>saveEdit(topic.id)}>Saqlash</Btn>
+                  <Btn size="sm" variant="outline" onClick={()=>setEditId(null)}>Bekor</Btn>
+                </div>
+              ) : (
+                <div>
+                  <div style={{fontWeight:500,fontSize:15}}>{topic.topic_name}</div>
+                  <div style={{fontSize:12,color:'var(--muted)',marginTop:2}}>
+                    {topic.created_at} · {topic.resource_count||0} fayl · {topic.quiz_count||0} test
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Actions */}
+            <div style={{display:'flex',gap:6}}>
+              <a href={`/topic/${topic.topic_uuid}/`}
+                 style={{padding:'5px 10px',borderRadius:6,border:'1px solid var(--border)',
+                   fontSize:12,fontWeight:500,color:'var(--text)',textDecoration:'none'}}>Ko'rish</a>
+              <button onClick={()=>{setEditId(topic.id);setEditName(topic.topic_name);}}
+                style={{width:30,height:30,borderRadius:7,border:'1px solid var(--border)',background:'transparent',
+                  display:'flex',alignItems:'center',justifyContent:'center',color:'var(--muted)',cursor:'pointer'}}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                </svg>
+              </button>
+              <button onClick={()=>setDeleteTarget(topic)}
+                style={{width:30,height:30,borderRadius:7,border:'1px solid var(--border)',background:'transparent',
+                  display:'flex',alignItems:'center',justifyContent:'center',color:'var(--danger)',cursor:'pointer'}}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="3 6 5 6 21 6"/>
+                  <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Slide-in panel */}
+      {showPanel && (
+        <div style={{position:'fixed',inset:0,zIndex:150}} onClick={()=>setShowPanel(false)}>
+          <div style={{position:'absolute',right:0,top:0,bottom:0,width:360,background:'var(--card)',
+              boxShadow:'var(--shadow-md)',animation:'slideIn .25s ease',padding:24,overflowY:'auto'}}
+              onClick={e=>e.stopPropagation()}>
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:24}}>
+              <h3 style={{fontWeight:600}}>Yangi mavzu</h3>
+              <button onClick={()=>setShowPanel(false)} style={{border:'none',background:'transparent',fontSize:20,cursor:'pointer',color:'var(--muted)'}}>×</button>
+            </div>
+            <div style={{marginBottom:14}}>
+              <label style={{display:'block',fontSize:13,fontWeight:500,marginBottom:5}}>Mavzu nomi *</label>
+              <input value={newTopic.topic_name} onChange={e=>setNewTopic(p=>({...p,topic_name:e.target.value}))}
+                placeholder="Chiziqli tenglamalar"
+                style={{width:'100%',padding:'8px 12px',borderRadius:8,border:'1px solid var(--border)',fontSize:14}} />
+            </div>
+            <div style={{marginBottom:20}}>
+              <label style={{display:'block',fontSize:13,fontWeight:500,marginBottom:5}}>Tavsif</label>
+              <textarea value={newTopic.description} onChange={e=>setNewTopic(p=>({...p,description:e.target.value}))}
+                style={{width:'100%',padding:'8px 12px',borderRadius:8,border:'1px solid var(--border)',
+                  fontSize:14,fontFamily:'inherit',minHeight:80,resize:'vertical'}} />
+            </div>
+            <Btn loading={saving} onClick={addTopic} style={{width:'100%',justifyContent:'center'}}>
+              Qo'shish
+            </Btn>
+          </div>
+        </div>
+      )}
+
+      {/* Delete confirm */}
+      <Modal open={!!deleteTarget} onClose={()=>setDeleteTarget(null)} title="Mavzuni o'chirish" width={400}>
+        <p style={{marginBottom:20,fontSize:14,color:'var(--muted)',lineHeight:1.6}}>
+          "<strong>{deleteTarget?.topic_name}</strong>" mavzusini o'chirasizmi? Barcha resurslar va testlar ham o'chadi.
+        </p>
+        <div style={{display:'flex',justifyContent:'flex-end',gap:8}}>
+          <Btn variant="outline" onClick={()=>setDeleteTarget(null)}>Bekor</Btn>
+          <Btn variant="danger" loading={deleting} onClick={deleteTopic}>O'chirish</Btn>
+        </div>
+      </Modal>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('sps-root')).render(<SubjectDetail />);
+</script>
 {% endblock %}

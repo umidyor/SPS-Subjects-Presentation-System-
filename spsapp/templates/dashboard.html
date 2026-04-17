@@ -1,70 +1,317 @@
-{% extends 'base.html' %}
-{% block title %}Dashboard — SPS{% endblock %}
+{% extends "base_react.html" %}
+{% block title %}Bosh sahifa — SPS{% endblock %}
 
-{% block content %}
-<div class="d-flex justify-content-between align-items-center mb-4 fade-up">
-    <div>
-        <h4 class="fw-700 mb-0">Xush kelibsiz, {{ user.get_full_name|default:user.username }} 👋</h4>
-        <p class="text-muted small mb-0">Barcha fanlar va testlaringiz</p>
-    </div>
-    <a href="{% url 'create_quiz' %}" class="btn btn-brand">
-        <i class="bi bi-plus-lg me-1"></i>Yangi test
-    </a>
-</div>
+{% block react_script %}
+<script type="text/babel">
+const { useState, useEffect } = React;
 
-{% if subject_stats %}
-<div class="row g-4">
-    {% for item in subject_stats %}
-    <div class="col-md-6 col-xl-4 fade-up fade-up-{{ forloop.counter|default:'1' }}">
-        <div class="card h-100">
-            <div class="card-body p-4">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <div>
-                        <h5 class="fw-700 mb-1">{{ item.subject.subject_name }}</h5>
-                        <span class="text-muted small">
-                            <i class="bi bi-person me-1"></i>{{ item.subject.teacher.get_full_name|default:item.subject.teacher.username }}
-                        </span>
-                    </div>
-                    <span class="badge text-bg-primary rounded-pill">{{ item.topics_count }} mavzu</span>
-                </div>
+/* ── Shared UI ─────────────────────────────────────── */
+function Btn({ children, variant='primary', size='md', onClick, type='button', loading, disabled, style={} }) {
+  const base = { display:'inline-flex', alignItems:'center', gap:6, fontFamily:'inherit', fontWeight:500,
+    cursor: disabled||loading ? 'not-allowed':'pointer', borderRadius:8, border:'none',
+    transition:'all .15s', opacity: disabled||loading ? 0.7:1 };
+  const sizes = { sm:{padding:'5px 12px',fontSize:13}, md:{padding:'8px 16px',fontSize:14}, lg:{padding:'11px 22px',fontSize:15} };
+  const variants = {
+    primary:{ background:'var(--brand)', color:'white' },
+    outline:{ background:'transparent', color:'var(--text)', border:'1px solid var(--border)' },
+    danger: { background:'var(--danger)', color:'white' },
+    ghost:  { background:'transparent', color:'var(--muted)', border:'none' },
+  };
+  return (
+    <button type={type} onClick={onClick} disabled={disabled||loading}
+      style={{...base,...sizes[size],...variants[variant],...style}}>
+      {loading && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+          style={{animation:'spin 1s linear infinite'}}>
+        <circle cx="12" cy="12" r="10" opacity=".3"/><path d="M22 12a10 10 0 00-10-10"/>
+      </svg>}
+      {children}
+    </button>
+  );
+}
 
-                <!-- Mini stats row -->
-                <div class="row g-2 mb-3">
-                    <div class="col-4">
-                        <div class="stat-card p-2 text-center">
-                            <div class="stat-value text-primary">{{ item.quizzes_count }}</div>
-                            <div class="stat-label">Test</div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="stat-card p-2 text-center">
-                            <div class="stat-value text-dark">{{ item.total_attempts }}</div>
-                            <div class="stat-label">Topshirdi</div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="stat-card p-2 text-center">
-                            <div class="stat-value text-success">{{ item.passed }}</div>
-                            <div class="stat-label">O'tdi</div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="{% url 'subjectdetails' item.subject.subject_name %}" class="btn btn-brand w-100">
-                    <i class="bi bi-arrow-right-circle me-1"></i>Ko'rish
-                </a>
-            </div>
+function Modal({ open, onClose, title, children, width=520 }) {
+  if (!open) return null;
+  return (
+    <div style={{position:'fixed',inset:0,background:'rgba(15,23,42,0.5)',zIndex:200,
+        display:'flex',alignItems:'center',justifyContent:'center',padding:16}} onClick={onClose}>
+      <div style={{background:'var(--card)',borderRadius:16,width:'100%',maxWidth:width,
+          maxHeight:'90vh',overflow:'auto',boxShadow:'var(--shadow-md)',animation:'fadeIn .2s ease'}}
+          onClick={e=>e.stopPropagation()}>
+        <div style={{padding:'20px 24px 16px',borderBottom:'1px solid var(--border)',
+            display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <h3 style={{fontWeight:600,fontSize:16}}>{title}</h3>
+          <button onClick={onClose} style={{border:'none',background:'transparent',fontSize:20,color:'var(--muted)'}}>×</button>
         </div>
+        <div style={{padding:24}}>{children}</div>
+      </div>
     </div>
-    {% endfor %}
-</div>
-{% else %}
-<div class="card border-0 text-center py-5 fade-up">
-    <div class="card-body">
-        <i class="bi bi-journal-x text-muted" style="font-size:3rem;"></i>
-        <h5 class="mt-3 fw-600">Hozircha fanlar yo'q</h5>
-        <p class="text-muted">Admin panel orqali sizga fan biriktiriladi.</p>
+  );
+}
+
+function Badge({ color='blue', children }) {
+  const map = {
+    blue:  {bg:'var(--brand-light)', color:'var(--brand-dark)'},
+    green: {bg:'var(--success-bg)',  color:'#065f46'},
+    red:   {bg:'var(--danger-bg)',   color:'#991b1b'},
+    gray:  {bg:'#f1f5f9',            color:'#475569'},
+  };
+  const s = map[color]||map.gray;
+  return <span style={{padding:'2px 8px',borderRadius:6,fontSize:12,fontWeight:500,
+      background:s.bg,color:s.color}}>{children}</span>;
+}
+
+function Input({ label, ...props }) {
+  return (
+    <div style={{marginBottom:14}}>
+      {label && <label style={{display:'block',fontSize:13,fontWeight:500,marginBottom:5}}>{label}</label>}
+      <input style={{width:'100%',padding:'8px 12px',borderRadius:8,border:'1px solid var(--border)',
+          fontSize:14,outline:'none',background:'var(--surface)'}} {...props} />
     </div>
-</div>
-{% endif %}
+  );
+}
+
+/* ── getCsrf ───────────────────────────────────────── */
+function getCsrf() {
+  return window.__SPS_URLS__?.csrfToken || '';
+}
+async function api(url, options={}) {
+  return fetch(url, {
+    headers:{ 'Content-Type':'application/json', 'X-CSRFToken':getCsrf(), ...options.headers },
+    ...options
+  });
+}
+
+/* ── SubjectCard ───────────────────────────────────── */
+function SubjectCard({ s, onEdit, onDelete }) {
+  const { subject, topics_count, quizzes_count, total_attempts, passed } = s;
+  return (
+    <div style={{background:'var(--card)',borderRadius:'var(--radius)',border:'1px solid var(--border)',
+        boxShadow:'var(--shadow)',overflow:'hidden',cursor:'pointer',transition:'box-shadow .2s'}}
+        onMouseEnter={e=>e.currentTarget.style.boxShadow='var(--shadow-md)'}
+        onMouseLeave={e=>e.currentTarget.style.boxShadow='var(--shadow)'}
+        onClick={()=>window.location.href=`/subject/${encodeURIComponent(subject.subject_name)}/`}>
+      <div style={{height:6,background:subject.color}} />
+      <div style={{padding:18}}>
+        <div style={{display:'flex',alignItems:'flex-start',justifyContent:'space-between',marginBottom:8}}>
+          <div>
+            <div style={{fontWeight:600,fontSize:16}}>{subject.subject_name}</div>
+            <div style={{fontSize:13,color:'var(--muted)',marginTop:2}}>{subject.description}</div>
+          </div>
+          <div style={{display:'flex',gap:4}} onClick={e=>e.stopPropagation()}>
+            <a href={`/subject/${subject.id}/edit/`}
+               style={{width:30,height:30,borderRadius:7,border:'1px solid var(--border)',background:'transparent',
+                 display:'flex',alignItems:'center',justifyContent:'center',color:'var(--muted)',textDecoration:'none'}}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </a>
+            <button onClick={()=>onDelete(subject)}
+               style={{width:30,height:30,borderRadius:7,border:'1px solid var(--border)',background:'transparent',
+                 display:'flex',alignItems:'center',justifyContent:'center',color:'var(--danger)',cursor:'pointer'}}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="3 6 5 6 21 6"/>
+                <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
+                <path d="M9 6V4h6v2"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:8,marginTop:14}}>
+          {[['Mavzular',topics_count,subject.color],['Testlar',quizzes_count,subject.color],
+            ['Urinishlar',total_attempts,'var(--text)'],["O'tdi",passed,'var(--success)']].map(([l,v,c])=>(
+            <div key={l} style={{background:'var(--surface)',borderRadius:8,padding:'8px 12px'}}>
+              <div style={{fontSize:11,color:'var(--muted)'}}>{l}</div>
+              <div style={{fontWeight:700,fontSize:18,color:c}}>{v}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ── Dashboard App ─────────────────────────────────── */
+function Dashboard() {
+  const data = window.__SPS_DATA__;
+  const [tab, setTab] = useState('fanlar');
+  const [stats, setStats] = useState(data.subject_stats || []);
+  const [quizzes] = useState(data.recent_quizzes || []);
+  const [showModal, setShowModal] = useState(false);
+  const [form, setForm] = useState({ subject_name:'', description:'', color:'#1a56db' });
+  const [saving, setSaving] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState(null);
+  const [deleting, setDeleting] = useState(false);
+  const [msg, setMsg] = useState('');
+
+  const createSubject = async () => {
+    if (!form.subject_name.trim()) return;
+    setSaving(true);
+    try {
+      const fd = new FormData();
+      Object.entries(form).forEach(([k,v]) => fd.append(k,v));
+      fd.append('csrfmiddlewaretoken', getCsrf());
+      await fetch('/subject/create/', { method:'POST', body:fd });
+      window.location.reload();
+    } catch(e) {
+      setSaving(false);
+    }
+  };
+
+  const deleteSubject = async () => {
+    if (!deleteTarget) return;
+    setDeleting(true);
+    const fd = new FormData();
+    fd.append('csrfmiddlewaretoken', getCsrf());
+    await fetch(`/subject/${deleteTarget.id}/delete/`, { method:'POST', body:fd });
+    setStats(p => p.filter(s => s.subject.id !== deleteTarget.id));
+    setDeleteTarget(null);
+    setDeleting(false);
+  };
+
+  return (
+    <div style={{maxWidth:1200,margin:'0 auto',padding:'28px 24px'}} className="fade-in">
+      {msg && <div style={{background:'var(--success-bg)',color:'#065f46',padding:'10px 16px',
+          borderRadius:8,marginBottom:16,fontSize:14}}>{msg}</div>}
+
+      {/* Header */}
+      <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:28}}>
+        <div>
+          <h1 style={{fontSize:22,fontWeight:700}}>Bosh sahifa</h1>
+          <p style={{color:'var(--muted)',fontSize:14,marginTop:2}}>
+            Salom, <strong>{data.teacher?.first_name || data.teacher?.username}</strong> 👋
+          </p>
+        </div>
+        <Btn onClick={()=>setShowModal(true)}>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          Fan qo'shish
+        </Btn>
+      </div>
+
+      {/* Tabs */}
+      <div style={{display:'flex',gap:4,marginBottom:20,borderBottom:'1px solid var(--border)'}}>
+        {[['fanlar',`Fanlar (${stats.length})`],['testlar',`Testlar (${quizzes.length})`]].map(([t,l])=>(
+          <button key={t} onClick={()=>setTab(t)} style={{padding:'8px 18px',borderRadius:'8px 8px 0 0',
+              border:'none',fontWeight:500,fontSize:14,cursor:'pointer',marginBottom:-1,
+              background: tab===t ? 'var(--brand)':'transparent',
+              color: tab===t ? 'white':'var(--muted)',
+              borderBottom: tab===t ? '1px solid var(--brand)':'1px solid transparent'}}>
+            {l}
+          </button>
+        ))}
+      </div>
+
+      {/* Fanlar tab */}
+      {tab==='fanlar' && (
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(270px,1fr))',gap:18}}>
+          {stats.map(s=>(
+            <SubjectCard key={s.subject.id} s={s} onDelete={setDeleteTarget} />
+          ))}
+          {stats.length===0 && (
+            <div style={{gridColumn:'1/-1',textAlign:'center',padding:'64px 24px',
+                color:'var(--muted)',border:'2px dashed var(--border)',borderRadius:'var(--radius)'}}>
+              <div style={{fontSize:14}}>Hali fan qo'shilmagan. "Fan qo'shish" tugmasini bosing.</div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Testlar tab */}
+      {tab==='testlar' && (
+        <div style={{background:'var(--card)',borderRadius:'var(--radius)',border:'1px solid var(--border)',
+            boxShadow:'var(--shadow)',overflow:'hidden'}}>
+          <div style={{padding:'14px 20px',borderBottom:'1px solid var(--border)',
+              display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+            <span style={{fontWeight:600,fontSize:15}}>So'nggi testlar</span>
+            <a href="/quiz/create/" style={{padding:'7px 14px',borderRadius:8,background:'var(--brand)',
+                color:'white',fontSize:13,fontWeight:500,textDecoration:'none'}}>+ Test yaratish</a>
+          </div>
+          <table style={{width:'100%',borderCollapse:'collapse',fontSize:14}}>
+            <thead><tr style={{background:'var(--surface)',borderBottom:'1px solid var(--border)'}}>
+              {['Test nomi','Fan / Mavzu','Vaqt','Urinishlar',"O'rt.ball",'Holat','Amallar'].map(h=>(
+                <th key={h} style={{padding:'10px 14px',textAlign:'left',fontWeight:600,fontSize:13,color:'var(--muted)'}}>{h}</th>
+              ))}
+            </tr></thead>
+            <tbody>
+              {quizzes.map(q=>(
+                <tr key={q.quiz_uuid} style={{borderBottom:'1px solid var(--border)'}}>
+                  <td style={{padding:'12px 14px',fontWeight:500}}>{q.title}</td>
+                  <td style={{padding:'12px 14px',color:'var(--muted)',fontSize:13}}>
+                    {q.topic__subject__subject_name} / {q.topic__topic_name}
+                  </td>
+                  <td style={{padding:'12px 14px'}}>{q.time_limit} daq</td>
+                  <td style={{padding:'12px 14px'}}>{q.attempt_count || 0}</td>
+                  <td style={{padding:'12px 14px'}}>{q.avg_score_val ? Math.round(q.avg_score_val) : '—'}</td>
+                  <td style={{padding:'12px 14px'}}>
+                    <Badge color={q.session_ended ? 'gray':'green'}>{q.session_ended ? 'Tugagan':'Faol'}</Badge>
+                  </td>
+                  <td style={{padding:'12px 14px'}}>
+                    <div style={{display:'flex',gap:6}}>
+                      <a href={`/quiz/${q.quiz_uuid}/results/`}
+                         style={{padding:'4px 10px',borderRadius:6,border:'1px solid var(--border)',
+                           fontSize:12,fontWeight:500,color:'var(--text)',textDecoration:'none'}}>Natijalar</a>
+                      <a href={`/quiz/${q.quiz_uuid}/edit/`}
+                         style={{padding:'4px 10px',borderRadius:6,border:'1px solid var(--border)',
+                           fontSize:12,fontWeight:500,color:'var(--text)',textDecoration:'none'}}>Tahrir</a>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+              {quizzes.length===0 && (
+                <tr><td colSpan={7} style={{padding:'32px',textAlign:'center',color:'var(--muted)',fontSize:14}}>
+                  Hali test yaratilmagan
+                </td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Create Modal */}
+      <Modal open={showModal} onClose={()=>setShowModal(false)} title="Yangi fan qo'shish">
+        <Input label="Fan nomi *" value={form.subject_name}
+          onChange={e=>setForm(p=>({...p,subject_name:e.target.value}))} placeholder="Matematika" />
+        <div style={{marginBottom:14}}>
+          <label style={{display:'block',fontSize:13,fontWeight:500,marginBottom:5}}>Tavsif</label>
+          <textarea value={form.description} onChange={e=>setForm(p=>({...p,description:e.target.value}))}
+            placeholder="Fan haqida qisqacha..."
+            style={{width:'100%',padding:'8px 12px',borderRadius:8,border:'1px solid var(--border)',
+              fontSize:14,resize:'vertical',minHeight:80,fontFamily:'inherit'}} />
+        </div>
+        <div style={{marginBottom:20}}>
+          <label style={{display:'block',fontSize:13,fontWeight:500,marginBottom:8}}>Rang</label>
+          <div style={{display:'flex',gap:8,flexWrap:'wrap'}}>
+            {['#1a56db','#10b981','#f59e0b','#8b5cf6','#ef4444','#06b6d4','#f97316','#ec4899'].map(c=>(
+              <button key={c} onClick={()=>setForm(p=>({...p,color:c}))}
+                style={{width:32,height:32,borderRadius:8,background:c,cursor:'pointer',
+                  border: form.color===c ? '3px solid #0f172a':'2px solid transparent'}} />
+            ))}
+          </div>
+        </div>
+        <div style={{display:'flex',justifyContent:'flex-end',gap:8}}>
+          <Btn variant="outline" onClick={()=>setShowModal(false)}>Bekor</Btn>
+          <Btn loading={saving} onClick={createSubject}
+              disabled={!form.subject_name.trim()}>Yaratish</Btn>
+        </div>
+      </Modal>
+
+      {/* Delete confirm */}
+      <Modal open={!!deleteTarget} onClose={()=>setDeleteTarget(null)} title="Fanni o'chirish" width={400}>
+        <p style={{marginBottom:20,color:'var(--muted)',fontSize:14,lineHeight:1.6}}>
+          <strong>"{deleteTarget?.subject_name}"</strong> fanini o'chirsangiz barcha mavzular,
+          resurslar va testlar ham o'chadi. Davom etasizmi?
+        </p>
+        <div style={{display:'flex',justifyContent:'flex-end',gap:8}}>
+          <Btn variant="outline" onClick={()=>setDeleteTarget(null)}>Bekor</Btn>
+          <Btn variant="danger" loading={deleting} onClick={deleteSubject}>Ha, o'chirish</Btn>
+        </div>
+      </Modal>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('sps-root')).render(<Dashboard />);
+</script>
 {% endblock %}

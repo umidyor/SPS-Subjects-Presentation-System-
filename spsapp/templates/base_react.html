@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}SPS{% endblock %}</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- React + Babel (CDN, build kerak emas) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #1a56db;
+      --brand-light: #dbeafe;
+      --brand-dark: #1e40af;
+      --surface: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #64748b;
+      --success: #10b981;
+      --success-bg: #d1fae5;
+      --danger: #ef4444;
+      --danger-bg: #fee2e2;
+      --warn: #f59e0b;
+      --warn-bg: #fef3c7;
+      --radius: 12px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+    }
+    body {
+      font-family: 'Sora', sans-serif;
+      background: var(--surface);
+      color: var(--text);
+    }
+    button, input, select, textarea { font-family: inherit; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+    @keyframes fadeIn  { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+    @keyframes slideIn { from { transform:translateX(100%); } to { transform:translateX(0); } }
+    @keyframes spin    { to { transform:rotate(360deg); } }
+    @keyframes pulse   { 0%,100%{opacity:1} 50%{opacity:.5} }
+    .fade-in { animation: fadeIn .25s ease; }
+
+    #sps-root { min-height: 100vh; }
+
+    /* Loading spinner */
+    .sps-loading {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; flex-direction: column; gap: 12px;
+    }
+    .sps-loading svg { animation: spin 1s linear infinite; }
+    .sps-loading p { color: var(--muted); font-size: 14px; }
+  </style>
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<!-- Django context → JS global. Har sahifada override qilinadi -->
+<script>
+  window.__SPS_DATA__ = {{ sps_data_json|safe }};
+  window.__SPS_URLS__ = {
+    dashboard:        "{% url 'dashboard' %}",
+    subjectCreate:    "{% url 'subject_create' %}",
+    topicReorder:     "{% url 'topic_reorder' %}",
+    resourceReorder:  "{% url 'resource_reorder' %}",
+    createQuiz:       "{% url 'create_quiz' %}",
+    quizList:         "{% url 'quiz_list' %}",
+    quizExcelParse:   "{% url 'quiz_excel_parse' %}",
+    csrfToken:        "{{ csrf_token }}",
+  };
+</script>
+
+<!-- Loading ko'rsatish (React yuklanguncha) -->
+<div id="sps-root">
+  <div class="sps-loading">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2">
+      <circle cx="12" cy="12" r="10" opacity=".2"/>
+      <path d="M22 12a10 10 0 00-10-10"/>
+    </svg>
+    <p>Yuklanmoqda...</p>
+  </div>
+</div>
+
+<!-- React komponent (har sahifada o'z skripti) -->
+{% block react_script %}{% endblock %}
+
+</body>
+</html>

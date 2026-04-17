@@ -1,0 +1,2273 @@
+INFO 2026-04-10 09:19:24,253 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:19:50,640 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:21:13,428 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:24:17,964 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:26:05,419 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:26:29,261 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:30:52,743 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:32:33,357 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:34:06,748 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:35:45,742 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:40:35,080 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:40:35,856 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:37,514 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:37,673 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:37,815 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:37,961 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,115 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,253 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,410 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,553 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,722 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:38,873 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,014 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,162 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,333 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,474 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,613 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,754 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:39,894 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:40,035 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:40,174 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:40:40,313 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:14,294 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:15,273 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:15,367 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:15,482 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:17,271 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:17,393 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:19,447 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,226 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,416 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,445 basehttp "GET /console/ HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,519 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,542 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,556 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,632 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,649 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,665 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,742 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,763 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,769 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,774 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,801 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,879 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,885 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,921 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,921 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:20,933 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,221 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,237 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,356 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,368 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,405 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,410 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,420 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,432 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,453 basehttp "GET /server HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,489 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,597 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,610 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,702 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,704 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,709 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,726 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,734 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,764 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,774 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,790 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,792 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,794 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,802 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,805 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,856 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,866 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,887 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,889 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,889 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,891 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,897 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,917 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,921 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,940 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,940 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,943 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,946 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,949 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,983 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:21,990 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,005 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,022 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,035 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,044 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,055 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,072 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,076 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,093 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,124 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,129 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,145 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,172 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,175 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,178 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,202 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,202 basehttp "GET /admin HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,206 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,209 basehttp "GET /index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,209 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,220 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,229 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,247 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,267 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,273 basehttp "GET /signup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,276 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,294 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,300 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,302 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,341 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,350 basehttp "GET /register HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,376 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,380 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,383 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,403 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,414 basehttp "GET /dashboard HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,427 basehttp "GET /plans HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,435 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,438 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,447 basehttp "GET /server-status HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,450 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,452 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,470 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,472 basehttp "GET /billing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,488 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,506 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,514 basehttp "GET /account HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,547 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,570 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,573 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,580 basehttp "GET /order HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,581 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,583 basehttp "GET /robots.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,588 basehttp "GET /checkout HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,589 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,590 basehttp "GET /donate HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,597 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,605 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,615 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,665 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,680 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,685 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,687 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,729 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,817 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,825 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,827 basehttp "GET /pricing HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,829 basehttp "GET /shop HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,838 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,842 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,843 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,846 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,856 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,857 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,871 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,874 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,887 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,890 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,899 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,904 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,908 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,910 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,922 basehttp "GET /cart HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,924 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,931 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,934 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,941 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,946 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,950 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,966 basehttp "GET /sitemap.xml HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:22,999 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,003 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,006 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,006 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,027 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,027 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,041 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,041 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,065 basehttp "GET /subscribe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,066 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,072 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,073 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,078 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,078 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,081 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,087 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,099 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,104 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,109 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,113 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,143 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,173 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,184 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,192 basehttp "GET /.env.development HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,194 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,206 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,206 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,231 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,241 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,243 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,251 basehttp "GET /payment HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,254 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,259 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,263 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,271 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,275 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,275 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,282 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,293 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,295 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,298 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,305 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,321 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,322 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,331 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,336 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,341 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,342 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,353 basehttp "GET /.env.production HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,356 basehttp "GET /.env.production.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,361 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,366 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,374 basehttp "GET /.env.prod HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,384 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,404 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,405 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,407 basehttp "GET /.env.dev HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,407 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,407 basehttp "GET /.env.staging HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,443 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,444 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,482 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,494 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,505 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,506 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,507 basehttp "GET /.env.stage HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,529 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,540 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,545 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,550 basehttp "GET /.env.vite HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,569 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,571 basehttp "GET /.env.test HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,575 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,577 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,590 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,598 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,603 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,616 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,640 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,645 basehttp "GET /.env.local HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,661 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,663 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,669 basehttp "GET /.env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,669 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,676 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,677 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,677 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,681 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,700 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,702 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,717 basehttp "GET /.env.old HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,718 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,724 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,776 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,782 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,784 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,788 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,791 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,792 basehttp "GET /.env.dist HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,793 basehttp "GET /.env.example HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,802 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,808 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,808 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,809 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,814 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,819 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,831 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,832 basehttp "GET /.env.uat HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,837 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,849 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,857 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,864 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,867 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,898 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,921 basehttp "GET /.env.save HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,923 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,926 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,946 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,947 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,947 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,956 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,957 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,961 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,962 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,964 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,966 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,973 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:23,992 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,009 basehttp "GET /.env.bak HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,016 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,022 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,026 basehttp "GET /.env.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,031 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,034 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,047 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,056 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,080 basehttp "GET /.env.template HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,088 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,092 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,098 basehttp "GET /.env.stripe HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,120 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,125 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,132 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,141 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,148 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,151 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,155 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,157 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,159 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,168 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,201 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,202 basehttp "GET /.env.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,226 basehttp "GET /env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,228 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,234 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,240 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,253 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,255 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,282 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,316 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,317 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,324 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,324 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,344 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,355 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,357 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,367 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,378 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,388 basehttp "GET /api/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,400 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,405 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,415 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,428 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,430 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,437 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,443 basehttp "GET /env.backup HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,448 basehttp "GET /about HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,459 basehttp "GET /backend/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,460 basehttp "GET /laravel/core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,469 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,470 basehttp "GET /api/v2/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,494 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,495 basehttp "GET /api/v1/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,496 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,532 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,542 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,544 basehttp "GET /api/shared/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,545 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,566 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,567 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,567 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,582 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,582 basehttp "GET /.env_sample HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,583 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,594 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,594 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,596 basehttp "GET /.env.aws HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,598 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,605 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,607 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,619 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,629 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,652 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,653 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,656 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,666 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,671 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,704 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,706 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,727 basehttp "GET /api/shared/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,728 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,732 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,746 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,751 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,754 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,761 basehttp "GET /laravel/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,763 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,773 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,778 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,778 basehttp "GET /payment/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,784 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,785 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,798 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,800 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,830 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,840 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,854 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,862 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,864 basehttp "GET /core/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,878 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,879 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,898 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,905 basehttp "GET /stripe/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:24,912 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,000 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,004 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,016 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,021 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,026 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,029 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,031 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,037 basehttp "GET /admin/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,038 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,080 basehttp "GET /assets/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,092 basehttp "GET /docker/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,096 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,148 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,148 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,159 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,166 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,175 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,187 basehttp "GET /docker/app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,196 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,213 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,263 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,269 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,301 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,310 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,341 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,353 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,356 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,358 basehttp "GET /app/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,362 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,391 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,410 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,444 basehttp "GET /config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,447 basehttp "GET /login.action HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,476 basehttp "GET /server/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,509 basehttp "GET /src/config/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,532 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,535 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,536 basehttp "GET /public/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,539 basehttp "GET /portal/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,571 basehttp "GET /env/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,598 basehttp "GET /src/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,603 basehttp "GET /web/.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,701 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:25,868 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,034 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,199 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,365 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,449 basehttp "GET /v2/_catalog HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,530 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,696 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,717 basehttp "GET /.DS_Store HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:26,863 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,028 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,194 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,359 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,525 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,691 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,715 basehttp "GET /.env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:27,856 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,021 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,187 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,351 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,516 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,682 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:28,847 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,012 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,178 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,344 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,510 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,676 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,717 basehttp "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:29,842 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:31,725 basehttp "GET /.git/config HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:32,724 basehttp "POST /graphql HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:32,999 basehttp "POST /api HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:33,299 basehttp "POST /api/graphql HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:33,622 basehttp "POST /graphql/api HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:34,006 basehttp "POST /api/gql HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:34,342 basehttp "GET /s/8363e23393e2032323e21333/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:35,323 basehttp "GET /config.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:37,320 basehttp "GET /telescope/requests HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:37,588 basehttp "GET /info.php HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:38,589 basehttp "GET /.well-known/security.txt HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:39,600 basehttp "GET /actuator/env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:41,592 basehttp "GET /swagger-ui.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:42,598 basehttp "GET /swagger/index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:43,591 basehttp "GET /swagger/swagger-ui.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:44,597 basehttp "GET /webjars/swagger-ui/index.html HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:45,593 basehttp "GET /swagger.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:46,594 basehttp "GET /swagger/v1/swagger.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:47,618 basehttp "GET /v2/api-docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:48,617 basehttp "GET /v3/api-docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:49,617 basehttp "GET /api-docs/swagger.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:50,619 basehttp "GET /api/swagger.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:51,619 basehttp "GET /trace.axd HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:52,623 basehttp "GET /@vite/env HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:53,619 basehttp "GET /.vscode/sftp.json HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:55,622 basehttp "GET /?rest_route=/wp/v2/users/ HTTP/1.0" 301 0
+INFO 2026-04-10 09:41:56,629 basehttp "GET /debug/default/view?panel=config HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,268 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,376 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,509 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,617 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,619 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,718 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,732 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,816 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,836 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,919 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:22,942 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,017 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,048 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,118 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,153 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,217 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,269 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,316 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,385 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,416 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,496 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,516 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,605 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,614 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,713 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,729 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,811 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,831 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,910 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:23,937 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,011 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,041 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,114 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,150 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,212 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,258 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,315 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,413 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:24,512 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,077 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,179 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,281 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,386 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,488 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,590 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,694 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,798 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:25,902 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,007 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,111 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,218 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,324 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,427 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,528 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,635 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:26,739 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:27,082 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:27,398 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:27,531 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:33,287 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:34,163 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:35,114 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:35,848 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:36,962 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:37,471 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:38,106 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:38,825 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:39,669 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,019 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,119 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,217 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,314 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,341 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,411 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,509 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,606 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,706 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,804 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:40,901 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,001 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,085 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,399 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,497 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,597 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,694 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,798 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:41,896 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:42,157 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:42,217 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:42,313 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:42,413 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:42,839 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:43,707 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:43,811 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:43,914 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,021 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,054 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,125 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,232 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,343 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,464 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,574 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,679 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,783 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,885 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:44,992 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,148 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,263 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,292 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,372 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,479 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,618 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:45,737 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:46,614 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:46,719 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:46,722 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:46,826 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:46,936 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,044 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,151 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,260 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,364 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,470 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,481 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,587 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,690 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,797 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:47,902 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,015 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,129 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,238 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,367 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,381 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,473 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,578 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:48,688 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:49,381 basehttp "GET /favicon.ico HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:59,514 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:59,616 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:59,713 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:59,809 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:42:59,906 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,004 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,102 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,205 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,311 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,417 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,513 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,614 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,712 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,811 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:00,908 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:01,007 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:01,105 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:01,215 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:01,316 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:01,415 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:06,245 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:06,433 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:06,597 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:06,761 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:06,925 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:07,378 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:07,544 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:07,709 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:07,880 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:08,044 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:08,212 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:09,302 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:09,466 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:09,633 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:09,815 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:10,000 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:10,211 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:10,411 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:19,627 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:19,746 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:19,866 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:19,987 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,107 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,228 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,348 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,469 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,589 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,708 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,833 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:20,955 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,075 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,196 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,316 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,438 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,557 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,677 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,798 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:21,918 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:28,821 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:28,984 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,148 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,318 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,482 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,648 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,813 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:29,977 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,145 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,324 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,488 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,657 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,823 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:30,990 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:31,155 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:31,319 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:31,483 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:31,647 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:31,829 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:41,609 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:41,706 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:41,804 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:41,900 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:41,998 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,097 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,194 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,291 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,387 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,484 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,580 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,678 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,773 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,868 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:42,965 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:43,063 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:43,163 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:43,261 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:43,356 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:43,452 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:53,241 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:53,529 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:53,747 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:53,983 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:55,026 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:55,260 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:55,473 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:55,698 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:55,910 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:56,123 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:56,337 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:56,552 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:56,763 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:56,973 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:57,184 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:57,395 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:57,606 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:43:57,823 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:28,285 autoreload Watching for file changes with StatReloader
+INFO 2026-04-10 09:54:29,333 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:29,472 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:29,622 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:29,766 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:29,854 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:29,998 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,138 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,283 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,426 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,594 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,749 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:30,900 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,042 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,197 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,336 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,476 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,625 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,776 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:31,919 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:32,066 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:32,207 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:32,351 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:32,494 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:32,655 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:33,854 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:33,998 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,148 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,297 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,438 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,583 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,734 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:34,874 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,012 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,156 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,298 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,450 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,596 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,740 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:35,887 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:36,033 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:36,173 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:36,311 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:36,454 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-10 09:54:36,598 basehttp "GET /docs HTTP/1.0" 301 0
+INFO 2026-04-12 15:51:34,724 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 15:59:10,816 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 15:59:18,141 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:19,442 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:19,620 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:19,762 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:19,922 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:20,144 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:20,362 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:20,561 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:20,761 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,000 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,159 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,323 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,482 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,641 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,801 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:21,941 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:22,101 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:22,260 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:22,541 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:22,740 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:22,902 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:59,171 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:59,329 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:59,480 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:59,662 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 15:59:59,820 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:00,086 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:00,253 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:00,432 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:02,252 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:02,440 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:02,698 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:02,969 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:03,155 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:03,381 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:03,589 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:03,750 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:03,972 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:04,208 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:04,432 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:04,595 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:09,310 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:10,583 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:10,843 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:11,048 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:11,308 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:11,469 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:11,624 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:11,831 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:12,025 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:12,196 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:12,429 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:12,685 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:12,841 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:13,113 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:13,285 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:13,445 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:13,623 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:13,804 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:14,007 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:14,203 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:14,399 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:19,680 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:19,842 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:20,040 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:20,246 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:20,495 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:20,671 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:20,822 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:21,084 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:21,302 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:21,516 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:21,673 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:21,955 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:22,106 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:22,266 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:22,429 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:22,598 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:22,762 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:23,039 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:23,427 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:00:23,590 basehttp "GET /api/auth/login/ HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:52,970 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:53,181 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:53,389 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:53,598 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:53,808 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:54,022 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:54,243 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:54,459 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:54,667 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:54,880 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:55,104 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:55,313 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:55,521 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:55,731 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:55,938 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:56,148 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:56,359 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:56,568 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:56,777 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 16:06:56,985 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:00,970 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:02,287 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:02,487 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:02,663 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:02,828 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:03,011 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:03,226 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:03,425 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:03,614 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:03,808 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:04,018 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:04,188 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:04,447 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:04,655 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:04,827 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:05,052 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:05,260 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:05,453 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:05,649 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:05,864 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:06,068 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,228 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,378 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,529 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,689 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,848 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:27,952 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,227 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,367 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,528 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,675 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,828 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:29,988 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,140 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,289 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,455 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,617 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,769 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:30,927 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:31,453 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:31,609 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:31,771 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:31,936 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:32,096 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:32,248 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:32,398 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:32,574 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:20:37,848 basehttp "GET /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:21:06,285 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 17:21:08,330 basehttp "HEAD /api/ HTTP/1.0" 301 0
+INFO 2026-04-12 17:21:26,270 basehttp "HEAD /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:27:30,388 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 17:28:11,105 basehttp "HEAD /api/ HTTP/1.1" 301 0
+INFO 2026-04-12 17:29:10,695 basehttp "GET /api/ HTTP/1.0" 301 0
+INFO 2026-04-12 17:29:17,980 basehttp "GET / HTTP/1.0" 301 0
+INFO 2026-04-12 17:29:24,344 basehttp "GET /api/ HTTP/1.0" 301 0
+INFO 2026-04-12 17:29:35,075 basehttp "HEAD /api/ HTTP/1.0" 301 0
+INFO 2026-04-12 17:56:33,701 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 17:56:34,694 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 17:56:40,381 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 17:56:49,591 basehttp "HEAD / HTTP/1.0" 301 0
+INFO 2026-04-12 17:56:52,725 basehttp "HEAD /api HTTP/1.0" 301 0
+INFO 2026-04-12 17:59:57,421 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 17:59:58,305 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:00:13,638 autoreload Watching for file changes with StatReloader
+WARNING 2026-04-12 18:00:22,034 log Not Found: /api/
+WARNING 2026-04-12 18:00:22,035 basehttp "HEAD /api/ HTTP/1.0" 404 0
+WARNING 2026-04-12 18:00:27,430 log Not Found: /api
+WARNING 2026-04-12 18:00:27,431 basehttp "HEAD /api HTTP/1.0" 404 0
+WARNING 2026-04-12 18:00:29,759 log Unauthorized: /
+WARNING 2026-04-12 18:00:29,759 basehttp "HEAD / HTTP/1.0" 401 0
+WARNING 2026-04-12 18:01:10,282 log Not Found: /api/docs/
+WARNING 2026-04-12 18:01:10,284 basehttp "GET /api/docs/ HTTP/1.0" 404 179
+WARNING 2026-04-12 18:01:10,477 log Not Found: /favicon.ico
+WARNING 2026-04-12 18:01:10,477 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-12 18:01:53,471 log Not Found: /api/
+WARNING 2026-04-12 18:01:53,473 basehttp "HEAD /api/ HTTP/1.0" 404 0
+INFO 2026-04-12 18:09:03,017 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 18:09:04,128 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:09:10,571 autoreload Watching for file changes with StatReloader
+WARNING 2026-04-12 18:10:12,742 log Method Not Allowed: /api/auth/login/
+WARNING 2026-04-12 18:10:12,746 basehttp "GET /api/auth/login/ HTTP/1.0" 405 12536
+WARNING 2026-04-12 18:10:13,092 log Not Found: /favicon.ico
+WARNING 2026-04-12 18:10:13,104 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-12 18:10:19,397 log Not Found: /admin
+WARNING 2026-04-12 18:10:19,406 basehttp "GET /admin HTTP/1.0" 404 179
+INFO 2026-04-12 18:10:34,273 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2026-04-12 18:10:34,453 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4159
+INFO 2026-04-12 18:11:16,920 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:11:18,005 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4159
+INFO 2026-04-12 18:11:23,124 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4369
+INFO 2026-04-12 18:11:30,484 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4369
+INFO 2026-04-12 18:12:57,182 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:13:03,039 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4369
+INFO 2026-04-12 18:13:53,471 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:13:54,927 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4369
+WARNING 2026-04-12 18:14:02,340 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:14:02,343 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+WARNING 2026-04-12 18:14:04,950 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:14:04,953 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+INFO 2026-04-12 18:15:51,477 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2026-04-12 18:15:51,627 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4159
+INFO 2026-04-12 18:15:57,463 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4369
+WARNING 2026-04-12 18:16:29,625 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:16:29,625 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+WARNING 2026-04-12 18:16:31,299 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:16:31,301 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+WARNING 2026-04-12 18:16:38,541 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:16:38,542 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+WARNING 2026-04-12 18:16:52,051 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:16:52,054 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+INFO 2026-04-12 18:17:19,091 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 18:17:20,971 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:17:25,825 autoreload Watching for file changes with StatReloader
+WARNING 2026-04-12 18:17:26,713 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:17:26,714 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+WARNING 2026-04-12 18:17:28,702 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:17:28,703 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+INFO 2026-04-12 18:19:13,315 basehttp "GET /admin/ HTTP/1.0" 302 0
+INFO 2026-04-12 18:19:13,488 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4159
+INFO 2026-04-12 18:19:54,601 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+INFO 2026-04-12 18:19:54,789 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:20:02,753 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:21:40,352 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:21:41,407 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:21:42,088 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:21:56,315 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:21:58,238 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:21:59,203 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:22:00,553 basehttp "GET /admin/ HTTP/1.0" 200 7120
+WARNING 2026-04-12 18:22:03,228 log Not Found: /
+WARNING 2026-04-12 18:22:03,230 basehttp "GET / HTTP/1.0" 404 179
+INFO 2026-04-12 18:22:05,189 basehttp "GET /admin/ HTTP/1.0" 200 7120
+WARNING 2026-04-12 18:22:21,868 log Forbidden (CSRF cookie not set.): /admin/login/
+WARNING 2026-04-12 18:22:21,870 basehttp "POST /admin/login/?next=/admin/ HTTP/1.0" 403 1608
+INFO 2026-04-12 18:22:28,843 basehttp "GET /admin/ HTTP/1.0" 200 7120
+INFO 2026-04-12 18:22:35,444 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+INFO 2026-04-12 18:22:35,633 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 6253
+INFO 2026-04-12 18:22:41,400 basehttp "GET /admin/auth/user/ HTTP/1.0" 302 0
+INFO 2026-04-12 18:22:41,733 basehttp "GET /admin/login/?next=/admin/auth/user/ HTTP/1.0" 200 4179
+WARNING 2026-04-12 18:22:42,656 log Not Found: /favicon.ico
+WARNING 2026-04-12 18:22:42,656 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-12 18:29:24,519 log Method Not Allowed: /api/auth/login/
+WARNING 2026-04-12 18:29:24,521 basehttp "GET /api/auth/login/ HTTP/1.0" 405 12536
+WARNING 2026-04-12 18:29:33,708 log Unauthorized: /api/auth/login/
+WARNING 2026-04-12 18:29:33,709 basehttp "POST /api/auth/login/ HTTP/1.0" 401 12476
+INFO 2026-04-12 18:29:42,123 basehttp "POST /api/auth/login/ HTTP/1.0" 200 12980
+INFO 2026-04-12 18:31:49,541 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 18:31:50,347 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:31:53,019 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:32:24,016 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 18:40:59,086 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 18:41:02,118 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 18:41:02,791 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+WARNING 2026-04-12 18:42:55,061 log Not Found: /
+WARNING 2026-04-12 18:42:55,062 basehttp "GET / HTTP/1.0" 404 179
+INFO 2026-04-12 21:16:11,651 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 21:16:24,492 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 21:16:44,915 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 21:16:51,499 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 21:17:11,388 basehttp "POST /api/auth/login/ HTTP/1.0" 200 12980
+WARNING 2026-04-12 21:17:18,203 log Unauthorized: /api/auth/login/
+WARNING 2026-04-12 21:17:18,204 basehttp "POST /api/auth/login/ HTTP/1.0" 401 12476
+INFO 2026-04-12 21:17:26,875 basehttp "POST /api/auth/login/ HTTP/1.0" 200 12980
+INFO 2026-04-12 21:17:53,950 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 21:19:05,088 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 21:19:10,260 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:19:32,552 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:19:50,219 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+WARNING 2026-04-12 21:19:50,862 log Unauthorized: /api/auth/login/
+WARNING 2026-04-12 21:19:50,867 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-12 21:19:58,587 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:20:11,252 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:20:31,017 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:26:28,366 autoreload /root/SPS-Subjects-Presentation-System-/sps/settings.py changed, reloading.
+INFO 2026-04-12 21:26:31,523 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:27:12,944 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:29:14,408 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:33:09,339 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:38:20,699 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:45:27,888 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:49:40,884 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+WARNING 2026-04-12 21:50:33,025 log Forbidden: /api/subjects/
+WARNING 2026-04-12 21:50:33,033 basehttp "GET /api/subjects/ HTTP/1.0" 403 63
+WARNING 2026-04-12 21:50:54,344 log Forbidden: /api/subjects/
+WARNING 2026-04-12 21:50:54,346 basehttp "GET /api/subjects/ HTTP/1.0" 403 63
+INFO 2026-04-12 21:51:23,244 basehttp "GET /admin/auth/user/1/change/ HTTP/1.0" 200 24072
+INFO 2026-04-12 21:51:23,484 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 6253
+INFO 2026-04-12 21:51:40,452 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+INFO 2026-04-12 21:57:08,481 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/permissions.py changed, reloading.
+INFO 2026-04-12 21:57:09,657 autoreload Watching for file changes with StatReloader
+INFO 2026-04-12 21:57:21,172 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 21:57:51,131 basehttp "GET /api/subjects/ HTTP/1.0" 200 52
+INFO 2026-04-12 22:37:21,523 basehttp "OPTIONS /subjects HTTP/1.0" 200 0
+WARNING 2026-04-12 22:37:21,653 log Not Found: /subjects
+WARNING 2026-04-12 22:37:21,654 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:26,728 log Not Found: /subjects
+WARNING 2026-04-12 22:37:26,731 basehttp "GET /subjects HTTP/1.0" 404 179
+INFO 2026-04-12 22:37:26,997 basehttp "OPTIONS /subjects HTTP/1.0" 200 0
+WARNING 2026-04-12 22:37:27,123 log Not Found: /subjects
+WARNING 2026-04-12 22:37:27,123 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:28,220 log Not Found: /subjects
+WARNING 2026-04-12 22:37:28,223 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:28,575 log Not Found: /subjects
+WARNING 2026-04-12 22:37:28,576 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:35,848 log Not Found: /subjects
+WARNING 2026-04-12 22:37:35,854 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:37,003 log Not Found: /subjects
+WARNING 2026-04-12 22:37:37,004 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:38,850 log Not Found: /subjects
+WARNING 2026-04-12 22:37:38,851 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:39,986 log Not Found: /subjects
+WARNING 2026-04-12 22:37:39,988 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:43,196 log Not Found: /subjects
+WARNING 2026-04-12 22:37:43,197 basehttp "POST /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:46,129 log Not Found: /subjects
+WARNING 2026-04-12 22:37:46,130 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:47,265 log Not Found: /subjects
+WARNING 2026-04-12 22:37:47,265 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:49,807 log Not Found: /subjects
+WARNING 2026-04-12 22:37:49,809 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:57,214 log Not Found: /subjects
+WARNING 2026-04-12 22:37:57,229 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:57,728 log Not Found: /subjects
+WARNING 2026-04-12 22:37:57,730 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:37:59,222 log Not Found: /subjects
+WARNING 2026-04-12 22:37:59,226 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:38:04,110 log Not Found: /subjects
+WARNING 2026-04-12 22:38:04,114 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:38:06,929 log Not Found: /subjects
+WARNING 2026-04-12 22:38:06,931 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:21,159 log Not Found: /subjects
+WARNING 2026-04-12 22:39:21,164 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:23,225 log Not Found: /subjects
+WARNING 2026-04-12 22:39:23,226 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:23,841 log Not Found: /subjects
+WARNING 2026-04-12 22:39:23,841 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:24,070 log Not Found: /subjects
+WARNING 2026-04-12 22:39:24,071 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:25,221 log Not Found: /subjects
+WARNING 2026-04-12 22:39:25,224 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:39:28,027 log Not Found: /subjects
+WARNING 2026-04-12 22:39:28,028 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:40:53,105 log Not Found: /subjects
+WARNING 2026-04-12 22:40:53,112 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:40:54,264 log Not Found: /subjects
+WARNING 2026-04-12 22:40:54,265 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:40:55,169 log Not Found: /subjects
+WARNING 2026-04-12 22:40:55,171 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:40:57,227 log Not Found: /subjects
+WARNING 2026-04-12 22:40:57,228 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:41:20,691 log Not Found: /subjects
+WARNING 2026-04-12 22:41:20,691 basehttp "GET /subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:41:20,719 log Not Found: /subjects
+WARNING 2026-04-12 22:41:20,720 basehttp "GET /subjects HTTP/1.0" 404 179
+INFO 2026-04-12 22:41:22,213 basehttp "OPTIONS /api/subjects HTTP/1.0" 200 0
+WARNING 2026-04-12 22:41:22,330 log Not Found: /api/subjects
+WARNING 2026-04-12 22:41:22,332 basehttp "GET /api/subjects HTTP/1.0" 404 179
+INFO 2026-04-12 22:41:25,713 basehttp "OPTIONS /api/subjects HTTP/1.0" 200 0
+WARNING 2026-04-12 22:41:25,749 log Not Found: /api/subjects
+WARNING 2026-04-12 22:41:25,751 basehttp "GET /api/subjects HTTP/1.0" 404 179
+WARNING 2026-04-12 22:41:25,844 log Not Found: /api/subjects
+WARNING 2026-04-12 22:41:25,845 basehttp "GET /api/subjects HTTP/1.0" 404 179
+INFO 2026-04-12 22:41:27,219 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+WARNING 2026-04-12 22:41:27,344 log Unauthorized: /api/subjects/
+WARNING 2026-04-12 22:41:27,345 basehttp "GET /api/subjects/ HTTP/1.0" 401 183
+INFO 2026-04-12 22:41:33,474 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+WARNING 2026-04-12 22:41:33,606 log Unauthorized: /api/subjects/
+WARNING 2026-04-12 22:41:33,607 basehttp "GET /api/subjects/ HTTP/1.0" 401 183
+WARNING 2026-04-12 22:44:25,958 log Unauthorized: /api/subjects/
+WARNING 2026-04-12 22:44:25,963 basehttp "GET /api/subjects/ HTTP/1.0" 401 183
+INFO 2026-04-12 22:49:47,604 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 22:49:48,117 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 22:50:03,757 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:12:30,124 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:12:30,670 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:12:30,880 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:12:31,037 basehttp "GET /api/subjects/ HTTP/1.0" 200 52
+WARNING 2026-04-12 23:13:24,255 log Unauthorized: /api/auth/login/
+WARNING 2026-04-12 23:13:24,256 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-12 23:13:32,115 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:13:32,360 basehttp "GET /api/subjects/ HTTP/1.0" 200 52
+INFO 2026-04-12 23:15:45,559 basehttp "GET /api/subjects/ HTTP/1.0" 200 52
+INFO 2026-04-12 23:15:53,079 basehttp "GET /api/subjects/ HTTP/1.0" 200 52
+WARNING 2026-04-12 23:16:13,558 log Bad Request: /api/subjects/
+WARNING 2026-04-12 23:16:13,564 basehttp "POST /api/subjects/ HTTP/1.0" 400 54
+WARNING 2026-04-12 23:16:20,143 log Bad Request: /api/subjects/
+WARNING 2026-04-12 23:16:20,144 basehttp "POST /api/subjects/ HTTP/1.0" 400 54
+WARNING 2026-04-12 23:16:38,461 log Bad Request: /api/subjects/
+WARNING 2026-04-12 23:16:38,462 basehttp "POST /api/subjects/ HTTP/1.0" 400 54
+WARNING 2026-04-12 23:18:28,758 log Bad Request: /api/subjects/
+WARNING 2026-04-12 23:18:28,764 basehttp "POST /api/subjects/ HTTP/1.0" 400 54
+INFO 2026-04-12 23:19:38,428 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+WARNING 2026-04-12 23:20:30,261 log Bad Request: /api/subjects/
+WARNING 2026-04-12 23:20:30,263 basehttp "POST /api/subjects/ HTTP/1.0" 400 54
+INFO 2026-04-12 23:20:43,463 basehttp "POST /api/subjects/ HTTP/1.0" 201 335
+INFO 2026-04-12 23:23:28,992 basehttp "GET /api/subjects/ HTTP/1.0" 200 422
+INFO 2026-04-12 23:24:27,992 basehttp "POST /api/subjects/ HTTP/1.0" 201 318
+INFO 2026-04-12 23:26:12,439 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:27:17,877 basehttp "OPTIONS /api/topics/?subject_uuid=720ed935-5421-468c-97ac-36ca37f81c7f HTTP/1.0" 200 0
+INFO 2026-04-12 23:27:17,877 basehttp "OPTIONS /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:27:18,031 log Not Found: /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/
+WARNING 2026-04-12 23:27:18,032 basehttp "GET /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:27:18,041 basehttp "GET /api/topics/?subject_uuid=720ed935-5421-468c-97ac-36ca37f81c7f HTTP/1.0" 200 52
+INFO 2026-04-12 23:27:29,397 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:27:30,684 basehttp "OPTIONS /api/topics/?subject_uuid=acca8d0a-9c75-4449-b768-c02820935ac0 HTTP/1.0" 200 0
+INFO 2026-04-12 23:27:30,684 basehttp "OPTIONS /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:27:30,849 log Not Found: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+INFO 2026-04-12 23:27:30,852 basehttp "GET /api/topics/?subject_uuid=acca8d0a-9c75-4449-b768-c02820935ac0 HTTP/1.0" 200 52
+WARNING 2026-04-12 23:27:30,853 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:29:32,840 log Unauthorized: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+WARNING 2026-04-12 23:29:32,842 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 401 58
+WARNING 2026-04-12 23:29:48,133 log Not Found: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+WARNING 2026-04-12 23:29:48,134 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:29:48,150 basehttp "GET /api/topics/?subject_uuid=acca8d0a-9c75-4449-b768-c02820935ac0 HTTP/1.0" 200 52
+INFO 2026-04-12 23:30:12,238 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+WARNING 2026-04-12 23:30:13,495 log Not Found: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+WARNING 2026-04-12 23:30:13,495 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:30:13,502 basehttp "GET /api/topics/?subject_uuid=acca8d0a-9c75-4449-b768-c02820935ac0 HTTP/1.0" 200 52
+INFO 2026-04-12 23:40:10,504 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:40:11,601 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:40:13,601 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:40:13,608 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:40:13,885 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:40:14,242 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:40:52,188 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:40:59,760 basehttp "GET /api/subjects/ HTTP/1.0" 200 776
+INFO 2026-04-12 23:41:14,924 basehttp "POST /api/subjects/ HTTP/1.0" 201 321
+INFO 2026-04-12 23:41:15,187 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:41:24,537 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:01,683 basehttp "OPTIONS /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:44:02,050 log Not Found: /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/
+WARNING 2026-04-12 23:44:02,062 basehttp "GET /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:44:23,895 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:24,139 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+WARNING 2026-04-12 23:44:28,853 log Not Found: /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/
+WARNING 2026-04-12 23:44:28,857 basehttp "GET /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:44:29,098 log Not Found: /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/
+WARNING 2026-04-12 23:44:29,125 basehttp "GET /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:44:33,227 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:33,400 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:36,845 basehttp "OPTIONS /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:44:36,848 basehttp "OPTIONS /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:44:37,076 log Not Found: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+WARNING 2026-04-12 23:44:37,077 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:44:37,305 log Not Found: /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/
+WARNING 2026-04-12 23:44:37,306 basehttp "GET /api/subjects/acca8d0a-9c75-4449-b768-c02820935ac0/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:44:39,182 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:39,483 basehttp "GET /api/subjects/ HTTP/1.0" 200 1133
+INFO 2026-04-12 23:44:49,580 basehttp "POST /api/subjects/ HTTP/1.0" 201 317
+INFO 2026-04-12 23:44:49,791 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:44:52,458 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:44:52,470 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:44:52,648 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:44:52,650 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:44:52,835 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:44:52,835 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:45:04,054 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:45:04,571 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+WARNING 2026-04-12 23:46:23,442 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:46:23,443 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:46:23,597 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:46:23,598 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:46:26,737 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:46:26,926 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:46:43,247 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:46:45,960 basehttp "OPTIONS /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:46:45,969 basehttp "OPTIONS /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:46:46,113 log Not Found: /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/
+WARNING 2026-04-12 23:46:46,114 basehttp "GET /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:46:46,289 log Not Found: /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/
+WARNING 2026-04-12 23:46:46,290 basehttp "GET /api/subjects/720ed935-5421-468c-97ac-36ca37f81c7f/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:46:50,751 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:46:50,947 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:47:00,396 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:47:01,619 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:47:01,876 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+WARNING 2026-04-12 23:47:03,570 log Not Found: /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/
+WARNING 2026-04-12 23:47:03,575 basehttp "GET /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:47:03,766 log Not Found: /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/
+WARNING 2026-04-12 23:47:03,770 basehttp "GET /api/subjects/c4032405-46dd-4e9d-b035-d353d6994f37/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:47:05,488 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:47:05,736 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:48:07,027 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:48:07,669 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-12 23:48:08,608 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:48:08,623 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:48:08,810 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:48:08,982 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:48:11,720 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+INFO 2026-04-12 23:48:11,731 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+WARNING 2026-04-12 23:48:11,924 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:48:11,925 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:48:12,122 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:48:12,128 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+WARNING 2026-04-12 23:48:34,250 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-12 23:48:34,253 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+INFO 2026-04-12 23:48:37,598 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-12 23:48:37,768 basehttp "GET /api/subjects/ HTTP/1.0" 200 1486
+INFO 2026-04-13 00:02:07,190 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:07,775 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-13 00:02:08,066 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:08,288 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1486
+INFO 2026-04-13 00:02:08,427 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:08,620 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1486
+INFO 2026-04-13 00:02:08,755 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:08,952 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-13 00:02:13,631 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/stats/ HTTP/1.0" 200 0
+WARNING 2026-04-13 00:02:13,869 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/stats/
+WARNING 2026-04-13 00:02:13,870 basehttp "GET /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/stats/ HTTP/1.0" 404 23
+INFO 2026-04-13 00:02:14,103 basehttp "OPTIONS /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:14,108 basehttp "OPTIONS /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:14,399 basehttp "GET /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-13 00:02:14,602 basehttp "GET /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-13 00:02:25,063 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+ERROR 2026-04-13 00:02:25,264 log Internal Server Error: /api/topics/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 109, in perform_create
+    max_order=models.Max('order')
+              ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2026-04-13 00:02:25,363 basehttp "POST /api/topics/ HTTP/1.0" 500 145
+INFO 2026-04-13 00:02:48,597 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+ERROR 2026-04-13 00:02:48,748 log Internal Server Error: /api/topics/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 109, in perform_create
+    max_order=models.Max('order')
+              ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2026-04-13 00:02:48,754 basehttp "POST /api/topics/ HTTP/1.0" 500 145
+INFO 2026-04-13 00:02:54,952 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:55,121 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-13 00:02:56,092 basehttp "OPTIONS /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:02:56,252 basehttp "GET /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-13 00:05:00,299 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+WARNING 2026-04-13 00:05:00,476 log Not Found: /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/
+WARNING 2026-04-13 00:05:00,476 basehttp "PUT /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 404 23
+INFO 2026-04-13 00:05:11,138 basehttp "OPTIONS /api/subjects/ HTTP/1.0" 200 0
+INFO 2026-04-13 00:05:11,376 basehttp "POST /api/subjects/ HTTP/1.0" 201 321
+INFO 2026-04-13 00:05:11,524 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:05:11,804 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1843
+INFO 2026-04-13 00:05:11,949 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:05:12,256 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1843
+INFO 2026-04-13 00:05:12,401 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-13 00:05:12,648 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+WARNING 2026-04-13 01:18:53,678 log Not Found: /
+WARNING 2026-04-13 01:18:53,687 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-13 04:01:20,477 log Not Found: /.git/HEAD
+WARNING 2026-04-13 04:01:20,484 basehttp "GET /.git/HEAD HTTP/1.0" 404 179
+INFO 2026-04-13 15:48:33,594 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+WARNING 2026-04-13 15:48:34,138 log Not Found: /favicon.ico
+WARNING 2026-04-13 15:48:34,139 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,151 log Not Found: /wp-includes/ID3/license.txt
+WARNING 2026-04-14 00:26:27,161 basehttp "GET //wp-includes/ID3/license.txt HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,203 log Not Found: /feed/
+WARNING 2026-04-14 00:26:27,204 basehttp "GET //feed/ HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,246 log Not Found: /xmlrpc.php
+WARNING 2026-04-14 00:26:27,247 basehttp "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,289 log Not Found: /blog/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,290 basehttp "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,357 log Not Found: /web/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,357 basehttp "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,399 log Not Found: /wordpress/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,400 basehttp "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,442 log Not Found: /wp/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,443 basehttp "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,529 log Not Found: /2020/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,530 basehttp "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,592 log Not Found: /2019/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,594 basehttp "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,636 log Not Found: /2021/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,637 basehttp "GET //2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,679 log Not Found: /shop/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,680 basehttp "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,723 log Not Found: /wp1/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,723 basehttp "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,766 log Not Found: /test/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,766 basehttp "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,808 log Not Found: /site/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,809 basehttp "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 00:26:27,853 log Not Found: /cms/wp-includes/wlwmanifest.xml
+WARNING 2026-04-14 00:26:27,854 basehttp "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-14 11:11:54,773 log Not Found: /
+WARNING 2026-04-14 11:11:54,779 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-14 12:05:34,125 log Not Found: /
+WARNING 2026-04-14 12:05:34,144 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-14 12:05:34,599 log Not Found: /favicon.ico
+WARNING 2026-04-14 12:05:34,600 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-14 12:56:55,932 log Not Found: /.git/config
+WARNING 2026-04-14 12:56:55,952 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-14 20:45:58,553 log Not Found: /blog/.git/config
+WARNING 2026-04-14 20:45:58,563 log Not Found: /packages/.git/config
+WARNING 2026-04-14 20:45:58,565 log Not Found: /www/.git/config
+WARNING 2026-04-14 20:45:58,550 log Not Found: /microservices/.git/config
+WARNING 2026-04-14 20:45:58,588 log Not Found: /modules/.git/config
+WARNING 2026-04-14 20:45:58,604 basehttp "GET /blog/.git/config HTTP/1.0" 404 179
+INFO 2026-04-14 20:45:58,606 basehttp "GET /admin/.git/config HTTP/1.0" 302 0
+WARNING 2026-04-14 20:45:58,608 basehttp "GET /packages/.git/config HTTP/1.0" 404 179
+WARNING 2026-04-14 20:45:58,609 basehttp "GET /microservices/.git/config HTTP/1.0" 404 179
+WARNING 2026-04-14 20:45:58,609 basehttp "GET /www/.git/config HTTP/1.0" 404 179
+WARNING 2026-04-14 20:45:58,612 basehttp "GET /modules/.git/config HTTP/1.0" 404 179
+WARNING 2026-04-15 02:18:41,269 log Not Found: /.git/config
+WARNING 2026-04-15 02:18:41,273 basehttp "GET /.git/config HTTP/1.0" 404 179
+INFO 2026-04-15 09:13:16,125 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+WARNING 2026-04-15 09:13:16,369 log Unauthorized: /api/subjects/
+WARNING 2026-04-15 09:13:16,372 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 401 183
+INFO 2026-04-15 09:13:16,644 basehttp "OPTIONS /api/auth/refresh/ HTTP/1.0" 200 0
+INFO 2026-04-15 09:13:17,067 basehttp "POST /api/auth/refresh/ HTTP/1.0" 200 483
+INFO 2026-04-15 09:13:17,215 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:13:17,729 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1843
+INFO 2026-04-15 09:13:17,989 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:13:18,639 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1843
+INFO 2026-04-15 09:13:18,795 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:13:19,031 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:13:26,135 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 200 0
+WARNING 2026-04-15 09:13:26,404 log Not Found: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/
+WARNING 2026-04-15 09:13:26,404 basehttp "PUT /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 404 23
+INFO 2026-04-15 09:13:42,122 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 200 0
+WARNING 2026-04-15 09:13:42,278 log Not Found: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/
+WARNING 2026-04-15 09:13:42,279 basehttp "PUT /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 404 23
+INFO 2026-04-15 09:15:25,031 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+WARNING 2026-04-15 09:15:25,606 log Not Found: /favicon.ico
+WARNING 2026-04-15 09:15:25,607 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+INFO 2026-04-15 09:20:01,824 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-15 09:20:09,715 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:20:12,943 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:13,350 basehttp "PUT /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/ HTTP/1.0" 200 364
+INFO 2026-04-15 09:20:13,491 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:13,710 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:20:13,858 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:14,107 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:20:14,248 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:14,448 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:20:20,300 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:20:20,485 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-15 09:20:20,494 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:20:20,651 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:20,655 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:20:20,858 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:20:21,055 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:20:34,740 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:20:34,952 log Internal Server Error: /api/topics/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 109, in perform_create
+    max_order=models.Max('order')
+              ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2026-04-15 09:20:34,959 basehttp "POST /api/topics/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:20:37,782 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:20:37,989 log Internal Server Error: /api/topics/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 109, in perform_create
+    max_order=models.Max('order')
+              ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2026-04-15 09:20:37,993 basehttp "POST /api/topics/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:22:41,084 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:22:41,280 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:22:41,428 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:22:41,618 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:22:41,793 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:22:41,947 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:22:46,858 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:22:47,044 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-15 09:22:47,046 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:22:47,223 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:22:47,225 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:22:47,401 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:22:47,572 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:22:56,972 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:22:57,194 log Internal Server Error: /api/topics/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 109, in perform_create
+    max_order=models.Max('order')
+              ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2026-04-15 09:22:57,200 basehttp "POST /api/topics/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:23:51,794 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-15 09:23:52,785 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:23:55,212 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:23:59,392 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+INFO 2026-04-15 09:23:59,716 basehttp "POST /api/topics/ HTTP/1.0" 201 265
+INFO 2026-04-15 09:23:59,871 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:24:00,068 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:24:04,210 basehttp "OPTIONS /api/topics/510fe6b8-94e6-4a8c-8150-7eb830f5bde2/ HTTP/1.0" 200 0
+INFO 2026-04-15 09:24:04,417 basehttp "PUT /api/topics/510fe6b8-94e6-4a8c-8150-7eb830f5bde2/ HTTP/1.0" 200 303
+INFO 2026-04-15 09:24:04,557 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:24:04,735 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:24:19,132 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:24:33,267 log Internal Server Error: /api/resources/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 150, in perform_create
+    topic = serializer.validated_data['topic']
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'topic'
+ERROR 2026-04-15 09:24:33,270 basehttp "POST /api/resources/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:25:17,233 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-15 09:25:18,030 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:25:23,194 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:25:26,260 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:50,728 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:50,989 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:25:51,165 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:51,382 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:25:51,535 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:51,734 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:25:56,553 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:25:56,798 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-15 09:25:56,801 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:25:56,949 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:56,965 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:57,132 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:25:57,405 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:25:57,561 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-15 09:25:57,750 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 52
+INFO 2026-04-15 09:26:10,504 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:26:27,861 log Internal Server Error: /api/resources/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 151, in perform_create
+    topic = serializer.validated_data['topic']
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'topic'
+ERROR 2026-04-15 09:26:27,865 basehttp "POST /api/resources/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:28:03,941 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:28:49,215 log Internal Server Error: /api/resources/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 151, in perform_create
+    topic = serializer.validated_data['topic']
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'topic'
+ERROR 2026-04-15 09:28:49,217 basehttp "POST /api/resources/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:35:02,359 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:35:03,104 log Internal Server Error: /api/resources/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/root/SPS-Subjects-Presentation-System-/spsapp/views.py", line 151, in perform_create
+    topic = serializer.validated_data['topic']
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'topic'
+ERROR 2026-04-15 09:35:03,112 basehttp "POST /api/resources/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:39:48,122 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/serializers.py changed, reloading.
+INFO 2026-04-15 09:39:48,983 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:39:53,061 autoreload Watching for file changes with StatReloader
+INFO 2026-04-15 09:40:08,209 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-15 09:40:08,732 log Bad Request: /api/resources/
+WARNING 2026-04-15 09:40:08,733 basehttp "POST /api/resources/ HTTP/1.0" 400 38
+INFO 2026-04-15 09:41:25,688 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:25,890 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:41:26,058 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:26,249 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-15 09:41:26,450 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:26,630 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-15 09:41:28,170 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-15 09:41:28,335 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-15 09:41:28,338 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-15 09:41:28,470 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:28,490 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:28,645 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:41:28,830 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-15 09:41:29,010 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-15 09:41:29,175 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 52
+INFO 2026-04-15 09:41:40,290 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-15 09:41:40,792 log Bad Request: /api/resources/
+WARNING 2026-04-15 09:41:40,793 basehttp "POST /api/resources/ HTTP/1.0" 400 79
+INFO 2026-04-15 09:44:19,846 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/serializers.py changed, reloading.
+INFO 2026-04-15 09:44:20,786 autoreload Watching for file changes with StatReloader
+WARNING 2026-04-15 10:25:51,823 log Not Found: /
+WARNING 2026-04-15 10:25:51,828 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:25:53,045 log Not Found: /favicon.ico
+WARNING 2026-04-15 10:25:53,046 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:04,384 log Not Found: /
+WARNING 2026-04-15 10:26:04,385 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:12,080 log Not Found: /
+WARNING 2026-04-15 10:26:12,081 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:31,567 log Not Found: /
+WARNING 2026-04-15 10:26:31,568 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:32,565 log Not Found: /console/
+WARNING 2026-04-15 10:26:32,566 basehttp "GET /console/ HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:33,562 log Not Found: /server
+WARNING 2026-04-15 10:26:33,563 basehttp "GET /server HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:34,564 log Not Found: /server-status
+WARNING 2026-04-15 10:26:34,565 basehttp "GET /server-status HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:36,565 log Not Found: /about
+WARNING 2026-04-15 10:26:36,566 basehttp "GET /about HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:37,605 log Not Found: /login.action
+WARNING 2026-04-15 10:26:37,606 basehttp "GET /login.action HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:38,566 log Not Found: /v2/_catalog
+WARNING 2026-04-15 10:26:38,566 basehttp "GET /v2/_catalog HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:38,632 log Not Found: /.DS_Store
+WARNING 2026-04-15 10:26:38,633 basehttp "GET /.DS_Store HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:39,641 log Not Found: /.env
+WARNING 2026-04-15 10:26:39,641 basehttp "GET /.env HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:41,635 log Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+WARNING 2026-04-15 10:26:41,636 basehttp "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:43,633 log Not Found: /.git/config
+WARNING 2026-04-15 10:26:43,634 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:44,657 log Not Found: /graphql
+WARNING 2026-04-15 10:26:44,658 basehttp "POST /graphql HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:44,684 log Not Found: /api
+WARNING 2026-04-15 10:26:44,685 basehttp "POST /api HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:44,699 log Not Found: /api/graphql
+WARNING 2026-04-15 10:26:44,700 basehttp "POST /api/graphql HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:44,737 log Not Found: /graphql/api
+WARNING 2026-04-15 10:26:44,738 basehttp "POST /graphql/api HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:44,793 log Not Found: /api/gql
+WARNING 2026-04-15 10:26:44,794 basehttp "POST /api/gql HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:45,636 log Not Found: /s/8363e23393e2032323e21333/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+WARNING 2026-04-15 10:26:45,637 basehttp "GET /s/8363e23393e2032323e21333/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:46,634 log Not Found: /config.json
+WARNING 2026-04-15 10:26:46,635 basehttp "GET /config.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:48,634 log Not Found: /telescope/requests
+WARNING 2026-04-15 10:26:48,635 basehttp "GET /telescope/requests HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:48,673 log Not Found: /version
+WARNING 2026-04-15 10:26:48,674 basehttp "GET /version HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:49,655 log Not Found: /info.php
+WARNING 2026-04-15 10:26:49,656 basehttp "GET /info.php HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:50,649 log Not Found: /.well-known/security.txt
+WARNING 2026-04-15 10:26:50,650 basehttp "GET /.well-known/security.txt HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:51,651 log Not Found: /actuator/env
+WARNING 2026-04-15 10:26:51,652 basehttp "GET /actuator/env HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:53,654 log Not Found: /swagger-ui.html
+WARNING 2026-04-15 10:26:53,655 basehttp "GET /swagger-ui.html HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:54,657 log Not Found: /swagger/index.html
+WARNING 2026-04-15 10:26:54,657 basehttp "GET /swagger/index.html HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:55,676 log Not Found: /swagger/swagger-ui.html
+WARNING 2026-04-15 10:26:55,677 basehttp "GET /swagger/swagger-ui.html HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:56,656 log Not Found: /webjars/swagger-ui/index.html
+WARNING 2026-04-15 10:26:56,657 basehttp "GET /webjars/swagger-ui/index.html HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:57,657 log Not Found: /swagger.json
+WARNING 2026-04-15 10:26:57,658 basehttp "GET /swagger.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:58,656 log Not Found: /swagger/v1/swagger.json
+WARNING 2026-04-15 10:26:58,658 basehttp "GET /swagger/v1/swagger.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:26:59,656 log Not Found: /v2/api-docs
+WARNING 2026-04-15 10:26:59,657 basehttp "GET /v2/api-docs HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:00,663 log Not Found: /v3/api-docs
+WARNING 2026-04-15 10:27:00,666 basehttp "GET /v3/api-docs HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:01,666 log Not Found: /api-docs/swagger.json
+WARNING 2026-04-15 10:27:01,672 basehttp "GET /api-docs/swagger.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:02,661 log Not Found: /api/swagger.json
+WARNING 2026-04-15 10:27:02,662 basehttp "GET /api/swagger.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:03,659 log Not Found: /trace.axd
+WARNING 2026-04-15 10:27:03,660 basehttp "GET /trace.axd HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:04,658 log Not Found: /@vite/env
+WARNING 2026-04-15 10:27:04,659 basehttp "GET /@vite/env HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:05,659 log Not Found: /.vscode/sftp.json
+WARNING 2026-04-15 10:27:05,660 basehttp "GET /.vscode/sftp.json HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:06,660 log Not Found: /
+WARNING 2026-04-15 10:27:06,660 basehttp "OPTIONS / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:07,663 log Not Found: /
+WARNING 2026-04-15 10:27:07,664 basehttp "GET /?rest_route=/wp/v2/users/ HTTP/1.0" 404 179
+WARNING 2026-04-15 10:27:08,671 log Not Found: /debug/default/view
+WARNING 2026-04-15 10:27:08,672 basehttp "GET /debug/default/view?panel=config HTTP/1.0" 404 179
+WARNING 2026-04-15 10:28:54,610 log Not Found: /
+WARNING 2026-04-15 10:28:54,611 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:29:04,804 log Not Found: /
+WARNING 2026-04-15 10:29:04,805 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:30:22,240 log Not Found: /
+WARNING 2026-04-15 10:30:22,242 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 10:42:03,933 log Not Found: /robots.txt
+WARNING 2026-04-15 10:42:03,942 basehttp "GET /robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-15 10:42:04,361 log Not Found: /
+WARNING 2026-04-15 10:42:04,362 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 11:20:23,336 log Not Found: /
+WARNING 2026-04-15 11:20:23,347 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 11:20:54,886 log Not Found: /
+WARNING 2026-04-15 11:20:54,887 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 11:47:34,920 log Not Found: /
+WARNING 2026-04-15 11:47:34,921 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 11:56:57,567 log Not Found: /.git/config
+WARNING 2026-04-15 11:56:57,568 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-15 11:56:57,800 log Not Found: /.git/HEAD
+WARNING 2026-04-15 11:56:57,801 basehttp "GET /.git/HEAD HTTP/1.0" 404 179
+WARNING 2026-04-15 11:56:57,960 log Not Found: /.git/logs/HEAD
+WARNING 2026-04-15 11:56:57,961 basehttp "GET /.git/logs/HEAD HTTP/1.0" 404 179
+WARNING 2026-04-15 12:05:46,526 log Not Found: /
+WARNING 2026-04-15 12:05:46,527 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 14:06:19,795 log Not Found: /
+WARNING 2026-04-15 14:06:19,810 basehttp "GET / HTTP/1.0" 404 179
+INFO 2026-04-15 15:47:01,899 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+WARNING 2026-04-15 15:47:03,092 log Not Found: /favicon.ico
+WARNING 2026-04-15 15:47:03,095 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+INFO 2026-04-15 16:13:51,874 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+WARNING 2026-04-15 16:13:52,176 log Not Found: /favicon.ico
+WARNING 2026-04-15 16:13:52,177 basehttp "GET /favicon.ico HTTP/1.0" 404 179
+WARNING 2026-04-15 18:59:51,395 log Not Found: /actuator/health
+WARNING 2026-04-15 18:59:51,406 basehttp "GET /actuator/health HTTP/1.0" 404 179
+WARNING 2026-04-15 19:38:01,923 log Not Found: /
+WARNING 2026-04-15 19:38:01,928 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-15 20:40:57,389 log Not Found: /robots.txt
+WARNING 2026-04-15 20:40:57,397 basehttp "GET /robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-16 02:11:16,728 log Not Found: /
+WARNING 2026-04-16 02:11:16,737 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 02:11:19,139 log Not Found: /
+WARNING 2026-04-16 02:11:19,140 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 02:11:21,212 log Not Found: /
+WARNING 2026-04-16 02:11:21,212 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 02:11:21,626 log Not Found: /
+WARNING 2026-04-16 02:11:21,629 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 02:11:22,115 log Not Found: /
+WARNING 2026-04-16 02:11:22,115 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 05:53:26,206 log Not Found: /
+WARNING 2026-04-16 05:53:26,217 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 08:51:29,689 log Not Found: /.git/config
+WARNING 2026-04-16 08:51:29,705 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-16 10:14:26,318 log Not Found: /
+WARNING 2026-04-16 10:14:26,320 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 11:23:39,744 log Not Found: /.env
+WARNING 2026-04-16 11:23:39,749 basehttp "GET /.env HTTP/1.0" 404 179
+WARNING 2026-04-16 11:23:39,789 log Not Found: /.aws/credentials
+WARNING 2026-04-16 11:23:39,790 basehttp "GET /.aws/credentials HTTP/1.0" 404 179
+WARNING 2026-04-16 11:23:39,794 log Not Found: /.env.production
+WARNING 2026-04-16 11:23:39,795 basehttp "GET /.env.production HTTP/1.0" 404 179
+WARNING 2026-04-16 11:23:41,802 log Not Found: /aws.env
+WARNING 2026-04-16 11:23:41,803 basehttp "GET /aws.env HTTP/1.0" 404 179
+WARNING 2026-04-16 14:23:58,328 log Not Found: /robots.txt
+WARNING 2026-04-16 14:23:58,350 basehttp "GET /robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-16 15:22:59,766 log Not Found: /
+WARNING 2026-04-16 15:22:59,799 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 19:53:21,379 log Not Found: /
+WARNING 2026-04-16 19:53:21,384 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-16 20:48:44,629 log Not Found: /.git/config
+WARNING 2026-04-16 20:48:44,633 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:09,678 log Not Found: /xmlrpc.php
+WARNING 2026-04-16 21:01:09,685 basehttp "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:09,691 log Not Found: /xmlrpc.php
+WARNING 2026-04-16 21:01:09,691 basehttp "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:09,810 log Not Found: /blog/robots.txt
+WARNING 2026-04-16 21:01:09,819 basehttp "GET //blog/robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:09,846 log Not Found: /blog/robots.txt
+WARNING 2026-04-16 21:01:09,849 basehttp "GET //blog/robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:09,995 log Not Found: /blog/
+WARNING 2026-04-16 21:01:10,007 basehttp "GET //blog/ HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:10,051 log Not Found: /blog/
+WARNING 2026-04-16 21:01:10,071 basehttp "GET //blog/ HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:10,166 log Not Found: /wordpress/
+WARNING 2026-04-16 21:01:10,172 basehttp "GET //wordpress/ HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:10,215 log Not Found: /wordpress/
+WARNING 2026-04-16 21:01:10,217 basehttp "GET //wordpress/ HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:10,295 log Not Found: /wp/
+WARNING 2026-04-16 21:01:10,296 basehttp "GET //wp/ HTTP/1.0" 404 179
+WARNING 2026-04-16 21:01:10,352 log Not Found: /wp/
+WARNING 2026-04-16 21:01:10,353 basehttp "GET //wp/ HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:41,962 log Not Found: /.env
+WARNING 2026-04-16 23:16:41,975 basehttp "GET /.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:42,926 log Not Found: /.env.local
+WARNING 2026-04-16 23:16:42,927 basehttp "GET /.env.local HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:44,666 log Not Found: /.env.production
+WARNING 2026-04-16 23:16:44,672 basehttp "GET /.env.production HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:45,576 log Not Found: /.env.development
+WARNING 2026-04-16 23:16:45,586 basehttp "GET /.env.development HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:47,360 log Not Found: /.env.staging
+WARNING 2026-04-16 23:16:47,362 basehttp "GET /.env.staging HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:48,353 log Not Found: /.env.backup
+WARNING 2026-04-16 23:16:48,353 basehttp "GET /.env.backup HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:50,160 log Not Found: /.env.bak
+WARNING 2026-04-16 23:16:50,162 basehttp "GET /.env.bak HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:50,988 log Not Found: /.env.old
+WARNING 2026-04-16 23:16:50,993 basehttp "GET /.env.old HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:51,701 log Not Found: /.env.example
+WARNING 2026-04-16 23:16:51,710 basehttp "GET /.env.example HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:53,345 log Not Found: /.env.save
+WARNING 2026-04-16 23:16:53,346 basehttp "GET /.env.save HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:54,211 log Not Found: /core/.env
+WARNING 2026-04-16 23:16:54,212 basehttp "GET /core/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:56,218 log Not Found: /api/.env
+WARNING 2026-04-16 23:16:56,219 basehttp "GET /api/.env HTTP/1.0" 404 23
+WARNING 2026-04-16 23:16:57,132 log Not Found: /backend/.env
+WARNING 2026-04-16 23:16:57,134 basehttp "GET /backend/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:58,881 log Not Found: /laravel/.env
+WARNING 2026-04-16 23:16:58,882 basehttp "GET /laravel/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:16:59,830 log Not Found: /app/.env
+WARNING 2026-04-16 23:16:59,831 basehttp "GET /app/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:01,728 log Not Found: /web/.env
+WARNING 2026-04-16 23:17:01,739 basehttp "GET /web/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:02,963 log Not Found: /src/.env
+WARNING 2026-04-16 23:17:02,964 basehttp "GET /src/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:05,070 log Not Found: /server/.env
+WARNING 2026-04-16 23:17:05,072 basehttp "GET /server/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:06,041 log Not Found: /config/.env
+WARNING 2026-04-16 23:17:06,050 basehttp "GET /config/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:07,985 log Not Found: /shared/.env
+WARNING 2026-04-16 23:17:07,986 basehttp "GET /shared/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:08,738 log Not Found: /public/.env
+WARNING 2026-04-16 23:17:08,741 basehttp "GET /public/.env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:10,484 log Not Found: /_next/static/env.js
+WARNING 2026-04-16 23:17:10,485 basehttp "GET /_next/static/env.js HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:11,280 log Not Found: /.vercel/.env.production.local
+WARNING 2026-04-16 23:17:11,281 basehttp "GET /.vercel/.env.production.local HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:13,010 log Not Found: /.git/config
+WARNING 2026-04-16 23:17:13,018 basehttp "GET /.git/config HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:13,733 log Not Found: /actuator/env
+WARNING 2026-04-16 23:17:13,753 basehttp "GET /actuator/env HTTP/1.0" 404 179
+WARNING 2026-04-16 23:17:14,437 log Not Found: /debug/default/view
+WARNING 2026-04-16 23:17:14,438 basehttp "GET /debug/default/view HTTP/1.0" 404 179
+WARNING 2026-04-17 03:14:15,630 log Not Found: /
+WARNING 2026-04-17 03:14:15,638 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:45,772 log Not Found: /
+WARNING 2026-04-17 09:50:45,824 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,228 log Not Found: /css/support_parent.css
+WARNING 2026-04-17 09:50:50,230 basehttp "GET /css/support_parent.css HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,263 log Not Found: /assets/js/auth.js
+WARNING 2026-04-17 09:50:50,265 basehttp "GET /assets/js/auth.js HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,297 log Not Found: /assets/js/message.js
+WARNING 2026-04-17 09:50:50,298 basehttp "GET /assets/js/message.js HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,419 log Not Found: /bot-connect.js
+WARNING 2026-04-17 09:50:50,420 basehttp "GET /bot-connect.js HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,449 log Not Found: /js/twint_ch.js
+WARNING 2026-04-17 09:50:50,453 basehttp "GET /js/twint_ch.js HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,486 log Not Found: /robots.txt
+WARNING 2026-04-17 09:50:50,489 basehttp "GET /robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-17 09:50:50,524 log Not Found: /js/lkk_ch.js
+WARNING 2026-04-17 09:50:50,527 basehttp "GET /js/lkk_ch.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:51,496 log Not Found: /
+WARNING 2026-04-17 10:45:51,550 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,096 log Not Found: /js/lkk_ch.js
+WARNING 2026-04-17 10:45:53,150 basehttp "GET /js/lkk_ch.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,271 log Not Found: /js/twint_ch.js
+WARNING 2026-04-17 10:45:53,304 basehttp "GET /js/twint_ch.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,560 log Not Found: /assets/js/qr_modal.js
+WARNING 2026-04-17 10:45:53,595 basehttp "GET /assets/js/qr_modal.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,679 log Not Found: /css/support_parent.css
+WARNING 2026-04-17 10:45:53,693 basehttp "GET /css/support_parent.css HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,807 log Not Found: /robots.txt
+WARNING 2026-04-17 10:45:53,820 basehttp "GET /robots.txt HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,941 log Not Found: /assets/js/auth.js
+WARNING 2026-04-17 10:45:53,941 basehttp "GET /assets/js/auth.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:53,980 log Not Found: /assets/js/message.js
+WARNING 2026-04-17 10:45:53,988 basehttp "GET /assets/js/message.js HTTP/1.0" 404 179
+WARNING 2026-04-17 10:45:54,010 log Not Found: /bot-connect.js
+WARNING 2026-04-17 10:45:54,013 basehttp "GET /bot-connect.js HTTP/1.0" 404 179
+WARNING 2026-04-17 11:07:43,703 log Not Found: /
+WARNING 2026-04-17 11:07:43,705 basehttp "GET / HTTP/1.0" 404 179
+INFO 2026-04-17 15:53:15,243 basehttp "GET /admin/auth/user/ HTTP/1.0" 200 12021
+INFO 2026-04-17 15:53:15,877 basehttp "GET /admin/jsi18n/ HTTP/1.0" 200 6253
+INFO 2026-04-17 17:00:25,832 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:00:26,908 log Unauthorized: /api/auth/login/
+WARNING 2026-04-17 17:00:26,911 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-17 17:00:27,044 basehttp "OPTIONS /api/auth/refresh/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:27,565 basehttp "POST /api/auth/refresh/ HTTP/1.0" 200 483
+INFO 2026-04-17 17:00:27,765 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:00:28,528 log Unauthorized: /api/auth/login/
+WARNING 2026-04-17 17:00:28,528 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-17 17:00:35,705 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:00:36,392 log Unauthorized: /api/auth/login/
+WARNING 2026-04-17 17:00:36,393 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-17 17:00:36,567 basehttp "OPTIONS /api/auth/refresh/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:36,756 basehttp "POST /api/auth/refresh/ HTTP/1.0" 200 483
+INFO 2026-04-17 17:00:36,877 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:00:37,478 log Unauthorized: /api/auth/login/
+WARNING 2026-04-17 17:00:37,479 basehttp "POST /api/auth/login/ HTTP/1.0" 401 63
+INFO 2026-04-17 17:00:47,556 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:48,323 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-17 17:00:48,589 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:48,929 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-17 17:00:49,054 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:49,333 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-17 17:00:49,471 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:49,847 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:00:53,379 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:53,556 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:00:58,361 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-17 17:00:58,634 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-17 17:00:58,728 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-17 17:00:58,866 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:58,903 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:59,303 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-17 17:00:59,515 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-17 17:00:59,662 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 17:00:59,873 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 52
+INFO 2026-04-17 17:01:16,308 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:01:17,514 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:01:17,518 basehttp "POST /api/resources/ HTTP/1.0" 400 38
+INFO 2026-04-17 17:02:10,528 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:10,697 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-17 17:02:10,821 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:11,067 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1851
+INFO 2026-04-17 17:02:11,196 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:11,434 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:02:12,957 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-17 17:02:13,094 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-17 17:02:13,096 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-17 17:02:13,219 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:13,225 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:13,405 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-17 17:02:13,575 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 355
+INFO 2026-04-17 17:02:13,696 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 17:02:13,840 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 52
+INFO 2026-04-17 17:02:21,295 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:02:21,767 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:02:21,767 basehttp "POST /api/resources/ HTTP/1.0" 400 38
+INFO 2026-04-17 17:03:06,202 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:03:06,785 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:03:06,785 basehttp "POST /api/resources/ HTTP/1.0" 400 38
