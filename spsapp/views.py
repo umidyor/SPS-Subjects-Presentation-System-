@@ -37,7 +37,9 @@ class SubjectViewSet(viewsets.ModelViewSet):
     search_fields = ['subject_name', 'description']
     ordering_fields = ['created_at', 'subject_name']
     ordering = ['-created_at']
-    lookup_field = 'subject_uuid'    
+    lookup_field = 'subject_uuid'
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+
     def get_queryset(self):
         return Subject.objects.filter(
             teacher=self.request.user
@@ -50,7 +52,7 @@ class SubjectViewSet(viewsets.ModelViewSet):
         serializer.save(teacher=self.request.user)
     
     @action(detail=True, methods=['get'])
-    def stats(self, request, pk=None):
+    def stats(self, request, *args, **kwargs):
         """Get detailed statistics for a subject"""
         subject = self.get_object()
         topics = Topic.objects.filter(subject=subject, teacher=request.user)
@@ -73,7 +75,6 @@ class SubjectViewSet(viewsets.ModelViewSet):
             'failed_count': total_attempts - passed_count
         })
 
-
 class TopicViewSet(viewsets.ModelViewSet):
     """Topic CRUD operations"""
     serializer_class = TopicSerializer
@@ -84,6 +85,7 @@ class TopicViewSet(viewsets.ModelViewSet):
     ordering_fields = ['order', 'created_at']
     ordering = ['order', 'created_at']
     lookup_field = 'topic_uuid'
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'  # ← ADD THIS LINE
     
     def get_queryset(self):
         queryset = Topic.objects.filter(
@@ -136,7 +138,7 @@ class ResourceViewSet(viewsets.ModelViewSet):
     ordering_fields = ['order', 'created_at']
     ordering = ['order', 'created_at']
     lookup_field = 'resource_uuid'
-    
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'  # ← ADD THIS LINE
     def get_queryset(self):
         queryset = Resource.objects.filter(teacher=self.request.user)
         
@@ -202,6 +204,7 @@ class QuizViewSet(viewsets.ModelViewSet):
     ordering_fields = ['created_at', 'title']
     ordering = ['-created_at']
     lookup_field = 'quiz_uuid'
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
     
     def get_queryset(self):
         user_topics = Topic.objects.filter(teacher=self.request.user)
@@ -225,23 +228,23 @@ class QuizViewSet(viewsets.ModelViewSet):
         
         serializer.save(teacher=self.request.user)
     
-    @action(detail=True, methods=['post'])
-    def regenerate_code(self, request, quiz_uuid=None):
+    @action(detail=True, methods=['post'],url_path='regenerate-code')
+    def regenerate_code(self, request,  *args, **kwargs):
         """Regenerate session code"""
         quiz = self.get_object()
         quiz.end_session()
         new_code = quiz.generate_session_code()
         return Response({'session_code': new_code})
     
-    @action(detail=True, methods=['post'])
-    def end_session(self, request, quiz_uuid=None):
+    @action(detail=True, methods=['post'],url_path='end-session')
+    def end_session(self, request,  *args, **kwargs):
         """End quiz session"""
         quiz = self.get_object()
         quiz.end_session()
         return Response({'status': 'Session ended'})
     
     @action(detail=True, methods=['get'])
-    def results(self, request, quiz_uuid=None):
+    def results(self, request, *args, **kwargs):
         """Get quiz results and statistics"""
         quiz = self.get_object()
         attempts = QuizAttempt.objects.filter(
@@ -269,8 +272,8 @@ class QuizViewSet(viewsets.ModelViewSet):
             'attempts': serializer.data
         })
     
-    @action(detail=True, methods=['get'])
-    def export_excel(self, request, quiz_uuid=None):
+    @action(detail=True, methods=['get'],url_path='export-excel')
+    def export_excel(self, request,  *args, **kwargs):
         """Export quiz results to Excel"""
         quiz = self.get_object()
         attempts = QuizAttempt.objects.filter(

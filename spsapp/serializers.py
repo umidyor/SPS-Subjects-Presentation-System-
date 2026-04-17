@@ -259,20 +259,20 @@ class QuizAttemptSerializer(serializers.ModelSerializer):
         ]
 
 
+class AnswerSerializer(serializers.Serializer):
+    question_id = serializers.IntegerField()
+    choice_ids = serializers.ListField(child=serializers.IntegerField())
+
+
 class QuizSubmissionSerializer(serializers.Serializer):
     """Serializer for quiz submission"""
     student_name = serializers.CharField(max_length=100)
-    answers = serializers.ListField(
-        child=serializers.DictField(
-            child=serializers.ListField(child=serializers.IntegerField())
-        )
-    )
-    
+    answers = AnswerSerializer(many=True)
+
     def validate_student_name(self, value):
         if not value.strip():
             raise serializers.ValidationError("Student name cannot be empty")
         return value.strip()
-
 
 class LeaderboardEntrySerializer(serializers.Serializer):
     """Leaderboard entry serializer"""

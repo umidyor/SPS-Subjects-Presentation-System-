@@ -2271,3 +2271,419 @@ WARNING 2026-04-17 17:02:21,767 basehttp "POST /api/resources/ HTTP/1.0" 400 38
 INFO 2026-04-17 17:03:06,202 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
 WARNING 2026-04-17 17:03:06,785 log Bad Request: /api/resources/
 WARNING 2026-04-17 17:03:06,785 basehttp "POST /api/resources/ HTTP/1.0" 400 38
+WARNING 2026-04-17 17:05:21,890 log Not Found: /
+WARNING 2026-04-17 17:05:21,891 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,908 log Not Found: /wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:21,909 basehttp "GET //wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,926 log Not Found: /xmlrpc.php
+WARNING 2026-04-17 17:05:21,927 basehttp "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,944 log Not Found: /
+WARNING 2026-04-17 17:05:21,945 basehttp "GET / HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,962 log Not Found: /blog/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:21,963 basehttp "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,981 log Not Found: /web/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:21,982 basehttp "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:21,999 log Not Found: /wordpress/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:21,999 basehttp "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,016 log Not Found: /website/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,017 basehttp "GET //website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,033 log Not Found: /wp/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,034 basehttp "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,051 log Not Found: /news/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,052 basehttp "GET //news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,096 log Not Found: /2018/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,097 basehttp "GET //2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,114 log Not Found: /2019/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,115 basehttp "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,132 log Not Found: /shop/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,133 basehttp "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,151 log Not Found: /wp1/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,151 basehttp "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,169 log Not Found: /test/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,170 basehttp "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,202 log Not Found: /wp2/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,203 basehttp "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,222 log Not Found: /site/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,222 basehttp "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,239 log Not Found: /cms/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,240 basehttp "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+WARNING 2026-04-17 17:05:22,257 log Not Found: /sito/wp-includes/wlwmanifest.xml
+WARNING 2026-04-17 17:05:22,258 basehttp "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+INFO 2026-04-17 17:06:19,849 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 17:06:22,407 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:06:23,529 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:06:23,530 basehttp "POST /api/resources/ HTTP/1.0" 400 38
+INFO 2026-04-17 17:06:47,932 basehttp "OPTIONS /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:06:48,113 basehttp "PUT /api/subjects/1c991b13-0009-478b-bf7b-e53b27479f26/ HTTP/1.0" 200 361
+INFO 2026-04-17 17:06:48,249 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:06:48,452 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 17:06:48,588 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:06:48,754 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 17:06:48,891 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:06:49,056 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:10:00,092 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:10:00,269 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:10:00,270 basehttp "POST /api/resources/ HTTP/1.0" 400 97
+INFO 2026-04-17 17:11:22,026 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:11:22,197 basehttp "GET /api/topics/ HTTP/1.0" 200 355
+INFO 2026-04-17 17:12:04,823 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:12:05,636 log Bad Request: /api/resources/
+WARNING 2026-04-17 17:12:05,637 basehttp "POST /api/resources/ HTTP/1.0" 400 80
+INFO 2026-04-17 17:15:23,272 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:15:24,235 basehttp "POST /api/resources/ HTTP/1.0" 201 383
+INFO 2026-04-17 17:20:56,041 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:56,204 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 17:20:56,321 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:56,474 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 17:20:56,592 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:56,739 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:20:58,155 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-17 17:20:58,289 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-17 17:20:58,297 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-17 17:20:58,414 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:58,416 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:58,566 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 738
+INFO 2026-04-17 17:20:58,712 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 738
+INFO 2026-04-17 17:20:58,828 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 17:20:58,975 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 435
+INFO 2026-04-17 17:21:21,498 basehttp "OPTIONS /api/resources/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:21:22,222 basehttp "POST /api/resources/ HTTP/1.0" 201 392
+INFO 2026-04-17 17:21:22,340 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:21:22,485 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 17:21:22,603 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 17:21:22,747 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 828
+INFO 2026-04-17 17:22:01,515 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:22:01,696 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:22:03,556 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:22:03,720 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 17:22:08,048 basehttp "OPTIONS /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:22:08,196 basehttp "GET /api/topics/?subject_uuid=1c991b13-0009-478b-bf7b-e53b27479f26&page_size=100 HTTP/1.0" 200 52
+INFO 2026-04-17 17:22:10,529 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:22:10,676 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 17:23:32,262 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:23:32,487 basehttp "POST /api/quizzes/ HTTP/1.0" 201 1746
+INFO 2026-04-17 17:23:32,615 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:23:32,786 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1833
+INFO 2026-04-17 17:23:36,853 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:23:37,001 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:23:50,491 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:23:50,660 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:23:50,660 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 155
+INFO 2026-04-17 17:24:37,762 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:24:37,978 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 201 747
+INFO 2026-04-17 17:27:41,756 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:27:41,949 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:27:49,054 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:27:49,234 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:27:49,240 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 137
+INFO 2026-04-17 17:29:27,624 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:29:27,818 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:29:38,805 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:29:38,971 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:29:38,973 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 155
+INFO 2026-04-17 17:33:44,911 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:33:45,119 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:33:52,507 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:33:52,668 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:33:52,669 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 155
+INFO 2026-04-17 17:34:54,967 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:34:55,172 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:35:02,060 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:35:03,195 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:35:03,203 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 137
+INFO 2026-04-17 17:36:06,237 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:36:06,418 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:36:13,554 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:36:13,715 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:36:13,716 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 63
+INFO 2026-04-17 17:40:02,880 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:40:03,121 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:40:11,638 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:40:11,790 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:40:11,791 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 155
+INFO 2026-04-17 17:40:21,955 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:40:22,177 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:40:27,242 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:40:27,612 log Bad Request: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/
+WARNING 2026-04-17 17:40:27,612 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 400 155
+INFO 2026-04-17 17:44:32,346 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/serializers.py changed, reloading.
+INFO 2026-04-17 17:44:34,575 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 17:44:37,346 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 17:44:46,242 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 17:48:07,020 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 17:48:19,484 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:48:19,908 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:48:25,445 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:48:25,881 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 201 783
+INFO 2026-04-17 17:48:37,028 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:48:37,203 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1271
+INFO 2026-04-17 17:48:45,823 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:48:46,076 basehttp "POST /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/submit/ HTTP/1.0" 201 776
+INFO 2026-04-17 17:49:00,320 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:49:00,571 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 438
+INFO 2026-04-17 17:49:04,892 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:49:05,035 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:49:05,085 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 438
+INFO 2026-04-17 17:49:05,147 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:49:05,203 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 438
+INFO 2026-04-17 17:49:05,337 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 438
+INFO 2026-04-17 17:50:06,943 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:50:07,059 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/
+WARNING 2026-04-17 17:50:07,060 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 404 179
+INFO 2026-04-17 17:50:31,489 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 0
+INFO 2026-04-17 17:50:31,892 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 4233
+INFO 2026-04-17 17:50:41,187 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 17:50:41,413 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 17:50:44,868 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:50:44,988 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 17:50:44,993 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 17:51:03,327 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:51:03,444 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 17:51:03,444 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 17:51:09,123 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 17:51:09,244 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 17:51:09,245 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 18:01:10,975 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-17 18:01:12,507 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:01:22,095 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:01:32,108 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:33,012 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-17 18:01:33,332 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:33,619 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:01:33,738 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:33,979 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:01:34,097 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:34,549 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:01:36,834 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-17 18:01:37,025 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-17 18:01:37,043 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-17 18:01:37,184 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:37,212 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:37,437 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:01:37,612 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:01:37,733 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:38,075 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 828
+INFO 2026-04-17 18:01:40,839 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:01:41,101 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:01:45,792 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 18:01:45,912 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 18:01:45,919 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 18:03:09,843 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-17 18:03:10,867 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:03:20,801 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:03:24,811 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:25,176 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:03:25,363 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:25,707 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:03:25,899 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:26,213 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:03:30,404 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+ERROR 2026-04-17 18:03:30,629 log Internal Server Error: /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/
+Traceback (most recent call last):
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/SPS-Subjects-Presentation-System-/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubjectViewSet.stats() got an unexpected keyword argument 'subject_uuid'
+ERROR 2026-04-17 18:03:30,638 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 500 145
+INFO 2026-04-17 18:03:30,832 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:30,835 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:31,114 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:03:31,368 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:03:31,576 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 18:03:31,834 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 828
+INFO 2026-04-17 18:07:12,817 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-17 18:07:13,866 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:07:23,296 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:07:27,151 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:27,370 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:07:27,493 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:27,705 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:07:27,834 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:28,106 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:07:30,001 basehttp "OPTIONS /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:30,218 basehttp "GET /api/subjects/e25c9638-60d0-462d-8f5d-4f6e50a819b9/stats/ HTTP/1.0" 200 89
+INFO 2026-04-17 18:07:30,345 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:30,360 basehttp "OPTIONS /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:30,508 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:07:30,674 basehttp "GET /api/topics/?subject_uuid=e25c9638-60d0-462d-8f5d-4f6e50a819b9&page_size=100 HTTP/1.0" 200 1131
+INFO 2026-04-17 18:07:30,793 basehttp "OPTIONS /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:30,976 basehttp "GET /api/resources/?topic_uuid=510fe6b8-94e6-4a8c-8150-7eb830f5bde2 HTTP/1.0" 200 828
+INFO 2026-04-17 18:07:32,706 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:07:32,919 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:07:37,116 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 200 0
+WARNING 2026-04-17 18:07:37,255 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/
+WARNING 2026-04-17 18:07:37,258 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 404 179
+INFO 2026-04-17 18:07:42,151 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 18:07:42,277 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 18:07:42,278 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 18:23:51,374 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-17 18:23:53,451 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:23:57,356 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:24:00,433 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:24:00,889 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:24:01,010 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:24:01,196 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:24:01,316 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:24:01,644 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:24:02,789 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:24:02,994 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:24:05,539 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+WARNING 2026-04-17 18:24:05,666 log Not Found: /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/
+WARNING 2026-04-17 18:24:05,688 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 404 179
+INFO 2026-04-17 18:27:27,679 autoreload /root/SPS-Subjects-Presentation-System-/spsapp/views.py changed, reloading.
+INFO 2026-04-17 18:27:28,740 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:27:32,548 autoreload Watching for file changes with StatReloader
+INFO 2026-04-17 18:27:34,779 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:35,021 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:27:35,142 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:35,382 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:27:35,502 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:35,780 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:27:36,715 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:36,924 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:27:39,886 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:40,076 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/regenerate-code/ HTTP/1.0" 200 25
+INFO 2026-04-17 18:27:40,207 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:40,478 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1847
+INFO 2026-04-17 18:27:42,740 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:42,985 basehttp "POST /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/end-session/ HTTP/1.0" 200 26
+INFO 2026-04-17 18:27:43,111 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:43,343 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1846
+INFO 2026-04-17 18:27:48,318 basehttp "OPTIONS /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+WARNING 2026-04-17 18:27:48,509 log Gone: /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/
+WARNING 2026-04-17 18:27:48,516 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 410 34
+INFO 2026-04-17 18:27:52,540 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:52,708 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:27:52,831 basehttp "OPTIONS /api/subjects/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:53,035 basehttp "GET /api/subjects/?page_size=100 HTTP/1.0" 200 1860
+INFO 2026-04-17 18:27:53,156 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:53,368 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1846
+INFO 2026-04-17 18:27:54,147 basehttp "OPTIONS /api/quizzes/?page_size=100 HTTP/1.0" 200 0
+INFO 2026-04-17 18:27:54,345 basehttp "GET /api/quizzes/?page_size=100 HTTP/1.0" 200 1846
+WARNING 2026-04-17 18:59:05,133 log Not Found: /
+WARNING 2026-04-17 18:59:05,136 basehttp "GET / HTTP/1.0" 404 179
+INFO 2026-04-17 19:03:17,644 basehttp "OPTIONS /api/auth/login/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:03:18,292 basehttp "POST /api/auth/login/ HTTP/1.0" 200 483
+INFO 2026-04-17 19:03:18,985 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:03:19,167 basehttp "GET /api/quizzes/ HTTP/1.0" 200 1846
+INFO 2026-04-17 19:03:42,737 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:03:45,634 basehttp "OPTIONS /api/quizzes/undefined/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:03:45,752 log Not Found: /api/quizzes/undefined/
+WARNING 2026-04-17 19:03:45,753 basehttp "GET /api/quizzes/undefined/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:06:44,137 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:06:44,361 basehttp "GET /api/quizzes/ HTTP/1.0" 200 1846
+INFO 2026-04-17 19:06:47,172 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:06:47,440 basehttp "GET /api/topics/ HTTP/1.0" 200 1131
+INFO 2026-04-17 19:06:55,444 basehttp "OPTIONS /api/topics/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:06:55,622 log Not Found: /api/topics/1/
+WARNING 2026-04-17 19:06:55,626 basehttp "GET /api/topics/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:08:14,333 basehttp "OPTIONS /api/topics/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:08:14,536 log Not Found: /api/topics/1/
+WARNING 2026-04-17 19:08:14,537 basehttp "GET /api/topics/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:08:29,756 basehttp "OPTIONS /api/topics/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:08:29,920 log Not Found: /api/topics/1/
+WARNING 2026-04-17 19:08:29,924 basehttp "GET /api/topics/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:08:30,507 basehttp "OPTIONS /api/topics/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:08:30,678 log Not Found: /api/topics/1/
+WARNING 2026-04-17 19:08:30,679 basehttp "GET /api/topics/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:08:31,083 basehttp "OPTIONS /api/topics/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:08:31,273 log Not Found: /api/topics/1/
+WARNING 2026-04-17 19:08:31,275 basehttp "GET /api/topics/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:08:39,153 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:08:40,600 basehttp "OPTIONS /api/topics/510fe6b8-94e6-4a8c-8150-7eb830f5bde2/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:08:40,820 basehttp "GET /api/topics/510fe6b8-94e6-4a8c-8150-7eb830f5bde2/ HTTP/1.0" 200 1079
+INFO 2026-04-17 19:08:52,160 basehttp "OPTIONS /api/topics/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:08:58,278 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:08:58,519 basehttp "GET /api/quizzes/ HTTP/1.0" 200 1846
+INFO 2026-04-17 19:09:00,171 basehttp "OPTIONS /api/quizzes/1/ HTTP/1.0" 200 0
+WARNING 2026-04-17 19:09:00,356 log Not Found: /api/quizzes/1/
+WARNING 2026-04-17 19:09:00,357 basehttp "GET /api/quizzes/1/ HTTP/1.0" 404 179
+INFO 2026-04-17 19:13:00,625 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:13:00,867 basehttp "GET /api/quizzes/ HTTP/1.0" 200 1846
+INFO 2026-04-17 19:13:02,264 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:13:02,491 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1794
+INFO 2026-04-17 19:13:02,669 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:13:02,912 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1794
+INFO 2026-04-17 19:13:03,099 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 437
+INFO 2026-04-17 19:15:54,797 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:15:54,996 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1794
+INFO 2026-04-17 19:15:55,117 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:15:55,161 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 437
+INFO 2026-04-17 19:15:55,456 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 4232
+INFO 2026-04-17 19:17:27,344 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:17:27,539 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 1794
+INFO 2026-04-17 19:17:27,662 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:17:27,702 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 437
+INFO 2026-04-17 19:17:27,995 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 4232
+INFO 2026-04-17 19:17:41,890 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:17:42,023 basehttp "OPTIONS /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 0
+INFO 2026-04-17 19:17:42,085 basehttp "GET /api/public/quiz/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/leaderboard/ HTTP/1.0" 200 437
+INFO 2026-04-17 19:17:42,294 basehttp "GET /api/quizzes/01ee9e55-426e-4035-a0e8-dd7db59bbe5e/results/ HTTP/1.0" 200 4232
+INFO 2026-04-17 19:17:43,359 basehttp "OPTIONS /api/quizzes/ HTTP/1.0" 200 0
