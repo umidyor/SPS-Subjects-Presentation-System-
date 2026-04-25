@@ -12,6 +12,8 @@ from django.db.models import Count, Avg, Q, Sum
 from django.db import transaction,models
 from django.utils import timezone
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.exceptions import PermissionDenied, NotFound
+from django.db.models import Count, Max
 import openpyxl
 
 from .models import (
@@ -75,6 +77,9 @@ class SubjectViewSet(viewsets.ModelViewSet):
             'failed_count': total_attempts - passed_count
         })
 
+
+
+
 class TopicViewSet(viewsets.ModelViewSet):
     """Topic CRUD operations"""
     serializer_class = TopicSerializer
@@ -85,7 +90,7 @@ class TopicViewSet(viewsets.ModelViewSet):
     ordering_fields = ['order', 'created_at']
     ordering = ['order', 'created_at']
     lookup_field = 'topic_uuid'
-    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'  # ← ADD THIS LINE
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
     
     def get_queryset(self):
         queryset = Topic.objects.filter(
@@ -94,39 +99,102 @@ class TopicViewSet(viewsets.ModelViewSet):
             resources_count=Count('resources'),
             quizzes_count=Count('quizzes')
         )
-        
         subject_uuid = self.request.query_params.get('subject_uuid')
         if subject_uuid:
             queryset = queryset.filter(subject__subject_uuid=subject_uuid)
-        
         return queryset
     
     def perform_create(self, serializer):
-        subject = serializer.validated_data['subject']
-        if subject.teacher != self.request.user:
-            raise PermissionError("You can only create topics in your own subjects")
+        """Create topic"""
+        subject_uuid = serializer.validated_data.get('subject_uuid')
         
-        # Get last order
+        try:
+            subject = Subject.objects.get(
+                subject_uuid=subject_uuid,
+                teacher=self.request.user
+            )
+        except Subject.DoesNotExist:
+            raise NotFound("Subject not found or you don't have permission")
+        
         last_order = Topic.objects.filter(subject=subject).aggregate(
-            max_order=models.Max('order')
+            max_order=Max('order')
         )['max_order'] or 0
         
-        serializer.save(teacher=self.request.user, order=last_order + 1)
+        serializer.save(teacher=self.request.user, subject=subject, order=last_order + 1)
+    
+    def perform_update(self, serializer):
+        """Update topic - only name and description"""
+        topic = self.get_object()
+        
+        if topic.teacher != self.request.user:
+            raise PermissionDenied("You can only update your own topics")
+        
+        # Ignore subject_uuid if provided - subject can't be changed
+        if 'subject_uuid' in serializer.validated_data:
+            serializer.validated_data.pop('subject_uuid')
+        
+        serializer.save()
+    
+    def destroy(self, request, *args, **kwargs):
+        """Delete topic with force option"""
+        instance = self.get_object()
+        
+        if instance.teacher != request.user:
+            raise PermissionDenied("You can only delete your own topics")
+        
+        force = request.query_params.get('force', 'false').lower() == 'true'
+        
+        has_resources = instance.resources.exists()
+        has_quizzes = instance.quizzes.exists()
+        
+        if (has_resources or has_quizzes) and not force:
+            resources_count = instance.resources.count()
+            quizzes_count = instance.quizzes.count()
+            
+            items = []
+            if has_resources:
+                items.append(f"{resources_count} resource(s)")
+            if has_quizzes:
+                items.append(f"{quizzes_count} quiz(zes)")
+            
+            return Response({
+                'error': f"This topic contains {' and '.join(items)}.",
+                'message': 'Please delete or move them to another topic before deleting, or use force=true to delete everything.',
+                'has_resources': has_resources,
+                'has_quizzes': has_quizzes,
+                'resources_count': resources_count,
+                'quizzes_count': quizzes_count,
+                'can_force_delete': True
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        instance.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
     
     @action(detail=False, methods=['post'])
     def reorder(self, request):
         """Reorder topics"""
         orders = request.data.get('orders', [])
         
+        if not orders:
+            return Response(
+                {'error': 'orders list is required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
         with transaction.atomic():
             for item in orders:
+                topic_uuid = item.get('topic_uuid')
+                order = item.get('order')
+                
+                if not topic_uuid or order is None:
+                    continue
+                
                 Topic.objects.filter(
-                    id=item['id'],
+                    topic_uuid=topic_uuid,
                     teacher=request.user
-                ).update(order=item['order'])
+                ).update(order=order)
         
         return Response({'status': 'success'})
-
 
 class ResourceViewSet(viewsets.ModelViewSet):
     """Resource CRUD operations"""
@@ -194,6 +262,7 @@ class ResourceViewSet(viewsets.ModelViewSet):
         return Response({'status': 'success'})
 
 
+
 class QuizViewSet(viewsets.ModelViewSet):
     """Quiz CRUD operations (Teacher)"""
     serializer_class = QuizSerializer
@@ -205,57 +274,118 @@ class QuizViewSet(viewsets.ModelViewSet):
     ordering = ['-created_at']
     lookup_field = 'quiz_uuid'
     lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
-    
+
     def get_queryset(self):
         user_topics = Topic.objects.filter(teacher=self.request.user)
         queryset = Quiz.objects.filter(
             topic__in=user_topics
         ).select_related('topic', 'topic__subject').annotate(
             attempt_count=Count('attempts', filter=Q(attempts__is_completed=True)),
-            avg_score=Avg('attempts__score', filter=Q(attempts__is_completed=True))
+            avg_score=Avg('attempts__score', filter=Q(attempts__is_completed=True)),
+            questions_count=Count('questions')
         )
-        
+
         topic_uuid = self.request.query_params.get('topic_uuid')
         if topic_uuid:
             queryset = queryset.filter(topic__topic_uuid=topic_uuid)
-        
+
         return queryset
-    
+
     def perform_create(self, serializer):
-        topic = serializer.validated_data['topic']
-        if topic.teacher != self.request.user:
-            raise PermissionError("You can only create quizzes in your own topics")
+        """Create quiz with topic_uuid"""
+        topic_uuid = serializer.validated_data.get('topic_uuid')
         
-        serializer.save(teacher=self.request.user)
-    
-    @action(detail=True, methods=['post'],url_path='regenerate-code')
-    def regenerate_code(self, request,  *args, **kwargs):
+        if not topic_uuid:
+            raise ValidationError({'topic_uuid': 'This field is required'})
+        
+        try:
+            topic = Topic.objects.get(
+                topic_uuid=topic_uuid,
+                teacher=self.request.user
+            )
+        except Topic.DoesNotExist:
+            raise NotFound("Topic not found or you don't have permission")
+        
+        quiz = serializer.save(teacher=self.request.user, topic=topic)
+        quiz.generate_session_code()
+
+    def perform_update(self, serializer):
+        """Update quiz - only basic fields"""
+        quiz = self.get_object()
+        
+        if quiz.topic.teacher != self.request.user:
+            raise PermissionDenied("You can only update your own quizzes")
+        
+        # Remove topic_uuid if provided (topic can't be changed)
+        if 'topic_uuid' in serializer.validated_data:
+            serializer.validated_data.pop('topic_uuid')
+        
+        serializer.save()
+
+    def destroy(self, request, *args, **kwargs):
+        """Delete quiz"""
+        instance = self.get_object()
+        
+        if instance.topic.teacher != request.user:
+            raise PermissionDenied("You can only delete your own quizzes")
+        
+        # Check if quiz has attempts
+        has_attempts = instance.attempts.exists()
+        force = request.query_params.get('force', 'false').lower() == 'true'
+        
+        if has_attempts and not force:
+            attempts_count = instance.attempts.count()
+            
+            return Response({
+                'error': f"This quiz has {attempts_count} attempt(s).",
+                'message': 'Deleting will remove all student results. Use force=true to confirm deletion.',
+                'attempts_count': attempts_count,
+                'can_force_delete': True
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        instance.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    @action(detail=True, methods=['post'], url_path='regenerate-code')
+    def regenerate_code(self, request, *args, **kwargs):
         """Regenerate session code"""
         quiz = self.get_object()
+        
+        if quiz.topic.teacher != request.user:
+            raise PermissionDenied("You can only regenerate code for your own quizzes")
+        
         quiz.end_session()
         new_code = quiz.generate_session_code()
         return Response({'session_code': new_code})
-    
-    @action(detail=True, methods=['post'],url_path='end-session')
-    def end_session(self, request,  *args, **kwargs):
+
+    @action(detail=True, methods=['post'], url_path='end-session')
+    def end_session(self, request, *args, **kwargs):
         """End quiz session"""
         quiz = self.get_object()
+        
+        if quiz.topic.teacher != request.user:
+            raise PermissionDenied("You can only end session for your own quizzes")
+        
         quiz.end_session()
         return Response({'status': 'Session ended'})
-    
+
     @action(detail=True, methods=['get'])
     def results(self, request, *args, **kwargs):
         """Get quiz results and statistics"""
         quiz = self.get_object()
+        
+        if quiz.topic.teacher != request.user:
+            raise PermissionDenied("You can only view results for your own quizzes")
+        
         attempts = QuizAttempt.objects.filter(
             quiz=quiz, is_completed=True
         ).order_by('-score', 'completed_at')
-        
+
         max_score = sum(q.points for q in quiz.questions.all())
         total_students = attempts.count()
         passed_count = sum(1 for a in attempts if a.percentage >= 70)
         avg_score = attempts.aggregate(avg=Avg('score'))['avg'] or 0
-        
+
         stats = QuizStatsSerializer({
             'total_attempts': total_students,
             'average_score': round(avg_score, 1),
@@ -263,33 +393,34 @@ class QuizViewSet(viewsets.ModelViewSet):
             'failed_count': total_students - passed_count,
             'max_possible_score': max_score
         })
-        
+
         serializer = QuizAttemptSerializer(attempts, many=True)
-        
+
         return Response({
             'quiz': QuizSerializer(quiz).data,
             'stats': stats.data,
             'attempts': serializer.data
         })
-    
-    @action(detail=True, methods=['get'],url_path='export-excel')
-    def export_excel(self, request,  *args, **kwargs):
+
+    @action(detail=True, methods=['get'], url_path='export-excel')
+    def export_excel(self, request, *args, **kwargs):
         """Export quiz results to Excel"""
         quiz = self.get_object()
+        
+        if quiz.topic.teacher != request.user:
+            raise PermissionDenied("You can only export results for your own quizzes")
+        
         attempts = QuizAttempt.objects.filter(
             quiz=quiz, is_completed=True
         ).order_by('-score')
-        
-        # Create workbook
+
         wb = openpyxl.Workbook()
         ws = wb.active
         ws.title = "Results"
-        
-        # Headers
+
         headers = ["#", "Student Name", "Score", "Max Score", "Percentage", "Status", "Completed At"]
         ws.append(headers)
-        
-        # Data
+
         for idx, attempt in enumerate(attempts, 1):
             pct = attempt.percentage
             status_text = "Passed ✓" if pct >= 70 else "Failed ✗"
@@ -302,8 +433,7 @@ class QuizViewSet(viewsets.ModelViewSet):
                 status_text,
                 attempt.completed_at.strftime("%Y-%m-%d %H:%M") if attempt.completed_at else ""
             ])
-        
-        # Save to response
+
         from django.http import HttpResponse
         response = HttpResponse(
             content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -311,7 +441,6 @@ class QuizViewSet(viewsets.ModelViewSet):
         response['Content-Disposition'] = f'attachment; filename="{quiz.title}_results.xlsx"'
         wb.save(response)
         return response
-
 
 # Public Quiz Views (No Authentication Required)
 
@@ -450,3 +579,67 @@ def quiz_leaderboard(request, quiz_uuid):
         'session_ended': quiz.session_ended,
         'leaderboard': serializer.data
     })
+
+
+
+class QuestionViewSet(viewsets.ModelViewSet):
+    """Question CRUD operations (Teacher) - Nested under Quiz"""
+    serializer_class = QuestionSerializer
+    permission_classes = [IsAuthenticated, IsTeacher]
+    lookup_field = 'question_uuid'
+    lookup_value_regex = '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+
+    def get_queryset(self):
+        """Get questions for a specific quiz"""
+        quiz_uuid = self.kwargs.get('quiz_uuid')
+        
+        try:
+            quiz = Quiz.objects.get(quiz_uuid=quiz_uuid)
+            
+            # Check if teacher owns this quiz
+            if quiz.topic.teacher != self.request.user:
+                return Question.objects.none()
+            
+            return Question.objects.filter(quiz=quiz).prefetch_related('choices')
+        except Quiz.DoesNotExist:
+            return Question.objects.none()
+
+    def get_quiz(self):
+        """Helper to get quiz and check permission"""
+        quiz_uuid = self.kwargs.get('quiz_uuid')
+        
+        try:
+            quiz = Quiz.objects.select_related('topic__teacher').get(quiz_uuid=quiz_uuid)
+            
+            if quiz.topic.teacher != self.request.user:
+                raise PermissionDenied("You can only manage questions in your own quizzes")
+            
+            return quiz
+        except Quiz.DoesNotExist:
+            raise NotFound("Quiz not found")
+
+    def perform_create(self, serializer):
+        """Create question in quiz"""
+        quiz = self.get_quiz()
+        serializer.save(quiz=quiz)
+
+    def perform_update(self, serializer):
+        """Update question"""
+        quiz = self.get_quiz()
+        question = self.get_object()
+        
+        if question.quiz != quiz:
+            raise PermissionDenied("Question does not belong to this quiz")
+        
+        serializer.save()
+
+    def destroy(self, request, *args, **kwargs):
+        """Delete question"""
+        quiz = self.get_quiz()
+        instance = self.get_object()
+        
+        if instance.quiz != quiz:
+            raise PermissionDenied("Question does not belong to this quiz")
+        
+        instance.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

@@ -73,16 +73,32 @@ class TopicSerializer(serializers.ModelSerializer):
     resources_count = serializers.IntegerField(read_only=True)
     quizzes_count = serializers.IntegerField(read_only=True)
     subject_name = serializers.CharField(source='subject.subject_name', read_only=True)
+
+    subject_uuid = serializers.UUIDField(write_only=True)
     
     class Meta:
         model = Topic
         fields = [
             'id', 'topic_uuid', 'topic_name', 'description',
-            'subject', 'subject_name', 'order', 'resources',
+            'subject','subject_uuid', 'subject_name', 'order', 'resources',
             'resources_count', 'quizzes_count',
             'created_at', 'updated_at'
         ]
-        read_only_fields = ['id', 'topic_uuid', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'topic_uuid','subject', 'created_at', 'updated_at']
+
+
+    def create(self, validated_data):
+        subject_uuid = validated_data.pop('subject_uuid')
+        subject = Subject.objects.get(subject_uuid=subject_uuid)
+        validated_data['subject'] = subject
+        return super().create(validated_data)
+    
+    def update(self, instance, validated_data):
+        if 'subject_uuid' in validated_data:
+            subject_uuid = validated_data.pop('subject_uuid')
+            subject = Subject.objects.get(subject_uuid=subject_uuid)
+            validated_data['subject'] = subject
+        return super().update(instance, validated_data)
 
 
 class ChoiceSerializer(serializers.ModelSerializer):
@@ -104,22 +120,41 @@ class ChoicePublicSerializer(serializers.ModelSerializer):
 class QuestionSerializer(serializers.ModelSerializer):
     """Question serializer with choices"""
     choices = ChoiceSerializer(many=True, required=False)
-    image_url = serializers.SerializerMethodField()
     
     class Meta:
         model = Question
         fields = [
-            'id', 'question_uuid', 'text', 'image', 'image_url',
-            'question_type', 'points', 'order', 'time_limit_seconds',
+            'id', 'question_uuid', 'text', 'points', 'question_type',
             'choices', 'created_at'
         ]
         read_only_fields = ['id', 'question_uuid', 'created_at']
     
-    def get_image_url(self, obj):
-        request = self.context.get('request')
-        if obj.image and request:
-            return request.build_absolute_uri(obj.image.url)
-        return None
+    @transaction.atomic
+    def create(self, validated_data):
+        choices_data = validated_data.pop('choices', [])
+        question = Question.objects.create(**validated_data)
+        
+        for c_data in choices_data:
+            Choice.objects.create(question=question, **c_data)
+        
+        return question
+    
+    @transaction.atomic
+    def update(self, instance, validated_data):
+        choices_data = validated_data.pop('choices', None)
+        
+        # Update question fields
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+        
+        # Update choices if provided
+        if choices_data is not None:
+            instance.choices.all().delete()
+            for c_data in choices_data:
+                Choice.objects.create(question=instance, **c_data)
+        
+        return instance
 
 
 class QuestionPublicSerializer(serializers.ModelSerializer):
@@ -144,64 +179,35 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
 
 
 class QuizSerializer(serializers.ModelSerializer):
-    """Quiz serializer with questions"""
-    questions = QuestionSerializer(many=True, required=False)
+    """Quiz serializer WITHOUT nested questions"""
     topic_name = serializers.CharField(source='topic.topic_name', read_only=True)
     subject_name = serializers.CharField(source='topic.subject.subject_name', read_only=True)
     attempt_count = serializers.IntegerField(read_only=True)
     avg_score = serializers.FloatField(read_only=True)
+    questions_count = serializers.IntegerField(read_only=True)
     
+    # Add topic_uuid for write operations
+    topic_uuid = serializers.UUIDField(write_only=True, required=False)
+    def create(self, validated_data):
+        validated_data.pop('topic_uuid', None)  # Remove before create
+        return super().create(validated_data)
+
+    def update(self, instance, validated_data):
+        validated_data.pop('topic_uuid', None)  # Remove before update
+        return super().update(instance, validated_data)
     class Meta:
         model = Quiz
         fields = [
             'id', 'quiz_uuid', 'title', 'description', 'time_limit',
             'is_active', 'session_code', 'session_started', 'session_ended',
-            'session_started_at', 'topic', 'topic_name', 'subject_name',
-            'questions', 'attempt_count', 'avg_score',
+            'session_started_at', 'topic', 'topic_uuid', 'topic_name', 'subject_name',
+            'attempt_count', 'avg_score', 'questions_count',
             'created_at', 'updated_at'
         ]
         read_only_fields = [
-            'id', 'quiz_uuid', 'session_code', 'session_started',
+            'id', 'quiz_uuid', 'topic', 'session_code', 'session_started',
             'session_ended', 'session_started_at', 'created_at', 'updated_at'
         ]
-    
-    @transaction.atomic
-    def create(self, validated_data):
-        questions_data = validated_data.pop('questions', [])
-        quiz = Quiz.objects.create(**validated_data)
-        quiz.generate_session_code()
-        
-        for q_data in questions_data:
-            choices_data = q_data.pop('choices', [])
-            question = Question.objects.create(quiz=quiz, **q_data)
-            
-            for c_data in choices_data:
-                Choice.objects.create(question=question, **c_data)
-        
-        return quiz
-    
-    @transaction.atomic
-    def update(self, instance, validated_data):
-        questions_data = validated_data.pop('questions', None)
-        
-        # Update quiz fields
-        for attr, value in validated_data.items():
-            setattr(instance, attr, value)
-        instance.save()
-        
-        # Update questions if provided
-        if questions_data is not None:
-            instance.questions.all().delete()
-            
-            for q_data in questions_data:
-                choices_data = q_data.pop('choices', [])
-                question = Question.objects.create(quiz=instance, **q_data)
-                
-                for c_data in choices_data:
-                    Choice.objects.create(question=question, **c_data)
-        
-        return instance
-
 
 class QuizPublicSerializer(serializers.ModelSerializer):
     """Quiz serializer for students"""
