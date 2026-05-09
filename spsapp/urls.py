@@ -8,7 +8,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 from .views import (
     SubjectViewSet, TopicViewSet, ResourceViewSet, QuizViewSet, QuestionViewSet,
-    quiz_public_detail, quiz_submit, quiz_result, quiz_leaderboard
+    quiz_public_detail, quiz_submit, quiz_result, quiz_leaderboard,quiz_join_by_code,quiz_preview_excel, quiz_import_excel
 )
 
 # Router for ViewSets
@@ -24,7 +24,10 @@ urlpatterns = [
     # Authentication
     path('auth/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('auth/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-        path('quizzes/', QuizViewSet.as_view({'get': 'list', 'post': 'create'})),
+    path('quizzes/', QuizViewSet.as_view({'get': 'list', 'post': 'create'})),
+    path('quiz/join/<str:session_code>/', quiz_join_by_code, name='quiz-join'),
+    path('quizzes/preview-excel/', quiz_preview_excel, name='quiz_preview_excel'),
+    path('quizzes/import-excel/',  quiz_import_excel,  name='quiz_import_excel'),
     path('quizzes/<uuid:quiz_uuid>/', QuizViewSet.as_view({
         'get': 'retrieve',
         'patch': 'update',
